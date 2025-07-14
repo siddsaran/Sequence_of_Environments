@@ -1,27 +1,47 @@
 import pandas as pd
+from itertools import permutations
 
 TAX = pd.read_csv("Datasets/tax.csv")
 CULTURE = pd.read_csv("Datasets/cultureProportions_Env.csv")
 MICROBIOME = pd.read_csv("Datasets/microbiomeProportions_Env.csv")
+LIMIT = 0.00001
 
-def find_next_environment(culture, bacteria):
+def find_cols_to_keep(culture, bacteria):
+    cols_to_keep = []
     bacteria_row = culture.loc[bacteria]
-    return bacteria_row.idxmax()
-
+    for col in culture.columns:
+        if bacteria_row[col] > LIMIT:
+            cols_to_keep.append(col)
+    return cols_to_keep
 
 def find_n_sequences(bacteria, num_sequences):
-    environments = []
     culture = CULTURE.set_index("OTU")
-    for _ in range(int(num_sequences)):
-        curr_env = find_next_environment(culture, bacteria)
-        environments.append(curr_env)
-        culture = culture.drop(columns=curr_env)
-    return environments
+    cols_to_keep = find_cols_to_keep(culture, bacteria)
+    culture = culture[cols_to_keep]
+    # generate all possible combinations of n environments
+    all_combos = list(permutations(culture.columns, num_sequences))
+    return find_best_sequence(culture, bacteria, all_combos)
+
+def find_best_sequence(culture, bacteria, combos):
+    combo_dict = dict()
+    bacteria_row = culture.loc[bacteria]
+    # for each combo, calculate the relative abundance of the bacteria
+    for combo in combos:
+        rel_abd = 0
+        rolling_sum = 0
+        for env in combo:
+            rolling_sum += culture[env].sum()
+            rel_abd = bacteria_row[env] / rolling_sum
+        combo_dict[combo] = rel_abd
+    # return max abundance
+    max_key = max(combo_dict, key=combo_dict.get)
+    max_value = combo_dict[max_key]
+    return max_key, max_value
+
 
 def main():
     bacteria = input("Type a bacteria: ")
-    num_sequences = input("Type the number of environments you want to grow: ")
-
+    num_sequences = int(input("Type the number of environments you want to grow: "))
     print(find_n_sequences(bacteria, num_sequences))
     
 
