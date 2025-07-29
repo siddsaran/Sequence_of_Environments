@@ -2,9 +2,9 @@ import pandas as pd
 from itertools import permutations
 
 TAX = pd.read_csv("Datasets/tax.csv")
-CULTURE = pd.read_csv("Datasets/cultureProportions_Env.csv")
-MICROBIOME = pd.read_csv("Datasets/microbiomeProportions_Env.csv")
-LIMIT = 0.00001
+CULTURE = pd.read_csv("Datasets/cultureProportions_Human.csv")
+MICROBIOME = pd.read_csv("Datasets/microbiomeProportions_Human.csv")
+LIMIT = 0.001
 
 def find_cols_to_keep(culture, bacteria):
     cols_to_keep = []
@@ -25,24 +25,101 @@ def find_n_sequences(bacteria, num_sequences):
 def find_best_sequence(culture, bacteria, combos):
     combo_dict = dict()
     bacteria_row = culture.loc[bacteria]
+    max_value = -1
+    key = 0
+    max_key = 0
     # for each combo, calculate the relative abundance of the bacteria
     for combo in combos:
-        rel_abd = 0
-        rolling_sum = 0
+        combo = list(combo)
+        filtered = culture[combo].copy()
+        env_looked = []
+        prev_label = None
         for env in combo:
-            rolling_sum += culture[env].sum()
-            rel_abd = bacteria_row[env] / rolling_sum
-        combo_dict[combo] = rel_abd
+            env_looked.append(env)
+            label = ",".join(env_looked) + " normalized"
+            if prev_label is None:
+                filtered[label] = filtered[env] / filtered[env].sum()
+            else:
+                filtered[label] = filtered[prev_label] * filtered[env]
+                filtered[label] /= filtered[label].sum()
+            prev_label = label
+        combo_dict[key] = filtered
+        val = filtered.loc[bacteria, prev_label]
+        if val > max_value:
+            max_value = val
+            max_key = key
+        key += 1
     # return max abundance
-    max_key = max(combo_dict, key=combo_dict.get)
-    max_value = combo_dict[max_key]
-    return max_key, max_value
+    return combo_dict[max_key]
 
 
 def main():
-    bacteria = input("Type a bacteria: ")
-    num_sequences = int(input("Type the number of environments you want to grow: "))
-    print(find_n_sequences(bacteria, num_sequences))
+    culture = CULTURE.set_index("OTU")
+    main_data = pd.DataFrame(columns=[
+        'OTU',
+        'num_growth_conditions',
+        'original_abundance',
+        'final_abundance',
+        'fold_change',
+        'conditions'
+    ])
+
+    # Progress var
+    num_done = 1
+
+    otus_to_skip = ["Otu3"]
+    otus_done = set()
+    for otu in MICROBIOME["OTU"]:
+        bacteria = otu
+        cols = find_cols_to_keep(culture, bacteria)
+        if otu in otus_to_skip:
+            continue
+        if otu in otus_done:
+            continue
+        otus_done.add(otu)
+        i = 4
+        if len(cols) < 3:
+            i = len(cols) + 1
+        for num_sequence in range(1, i):
+            num_sequences = num_sequence
+            df = find_n_sequences(bacteria, num_sequences)
+            merged = MICROBIOME.merge(df, on='OTU', how='left')
+            merged = merged.fillna(0)
+            normalized_cols = list(df.columns[num_sequences:])
+            original = round(MICROBIOME.loc[MICROBIOME['OTU'] == bacteria, 'relabd'].values[0] * 100, 5)
+            abd = round(merged.loc[merged['OTU'] == bacteria, normalized_cols[-1]].values[0] * 100,5)
+            factor = abd / original
+            new_row = {
+                'OTU': bacteria,
+                'num_growth_conditions': num_sequences,
+                'original_abundance': str(original) + "%",
+                'final_abundance': str(abd) + "%",
+                'fold_change': factor,
+                'conditions': normalized_cols
+            }
+            print(f"Adding {bacteria} with {num_sequence} growth conditions, {(num_done/137) * 100:.3f}% done!")
+            main_data.loc[len(main_data) - 2] = new_row
+        num_done += 1
+
+    main_data.to_csv('allChanges.csv')
+    # bacteria = input("Type a bacteria: ")
+    # num_sequences = int(input("Type the number of environments you want to grow: "))
+    # df = find_n_sequences(bacteria, num_sequences)
+    # merged = MICROBIOME.merge(df, on='OTU', how='left')
+    # merged = merged.fillna(0)
+    # normalized_cols = list(df.columns[num_sequences:])
+    # original = MICROBIOME.loc[MICROBIOME['OTU'] == bacteria, 'relabd'].values[0]
+    #
+    # for col in normalized_cols:
+    #     print(df[col])
+    # abd = merged.loc[merged['OTU'] == bacteria, normalized_cols[-1]].values[0]
+    # print(f"Original Relative abundance of {bacteria} is {(original*100):.4g}%")
+    # print(f"Final Relative abundance of {bacteria} is {(abd*100):.4g}%")
+    # print(f"Enrichment Factor is  {float(abd / original):.3g}")
+
+
+
+
     
 
 if __name__ == "__main__":
