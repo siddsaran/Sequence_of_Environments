@@ -1,361 +1,233 @@
-,OTU,num_growth_conditions,original_abundance,final_abundance,fold_change,conditions
--2,Otu33,1,0.13981%,16.19071%,115.80509262570632,['BHI + FBS (5%) + Pen normalized']
--1,Otu33,2,0.13981%,7.96723%,56.986124025463134,"['MiPro + NA normalized', 'MiPro + NA,5% Sheep Blood + Amp normalized']"
-0,Otu33,3,0.13981%,2.56547%,18.34968886345755,"['MiPro + NA normalized', 'MiPro + NA,5% Sheep Blood + Amp normalized', 'MiPro + NA,5% Sheep Blood + Amp,WCA + NA normalized']"
-1,Otu5,1,0.52898%,77.87074%,147.20923286324623,['BHI + FBS (5%) + Crb normalized']
-2,Otu5,2,0.52898%,95.77598%,181.05784717758706,"['BHI + FBS (5%) + Crb normalized', 'BHI + FBS (5%) + Crb,YCFA + NA normalized']"
-3,Otu5,3,0.52898%,99.7592%,188.58784831184545,"['Postgate + Crb normalized', 'Postgate + Crb,YCFA + NA normalized', 'Postgate + Crb,YCFA + NA,BHI + FBS (5%) + Amp normalized']"
-4,Otu12,1,1.24617%,33.70051%,27.043268574913537,['R2A - Resistant Starch + NA normalized']
-5,Otu12,2,1.24617%,67.25658%,53.97063001035172,"['R2A - Inulin + NA normalized', 'R2A - Inulin + NA,Starting sample 1 + NA normalized']"
-6,Otu12,3,1.24617%,84.30714%,67.65300079443415,"['R2A - Inulin + NA normalized', 'R2A - Inulin + NA,Starting sample 1 + NA normalized', 'R2A - Inulin + NA,Starting sample 1 + NA,R2A - Resistant Starch + NA normalized']"
-7,Otu24,1,0.10919%,82.52111%,755.7570290319626,['Mucus + Amp normalized']
-8,Otu24,2,0.10919%,99.01877%,906.8483377598682,"['5% Sheep Blood + Kan normalized', '5% Sheep Blood + Kan,Mucus + Amp normalized']"
-9,Otu24,3,0.10919%,99.87048%,914.6485941936076,"['5% Sheep Blood + Kan normalized', '5% Sheep Blood + Kan,BHI + FBS (5%) + Amp normalized', '5% Sheep Blood + Kan,BHI + FBS (5%) + Amp,Mucus + Kan normalized']"
-10,Otu54,1,1.04217%,1.18479%,1.1368490745271884,['Starting sample 1 + NA normalized']
-11,Otu54,2,1.04217%,0.58228%,0.5587188270627633,"['A II + NA normalized', 'A II + NA,Starting sample 1 + NA normalized']"
-12,Otu54,3,1.04217%,0.51591%,0.4950343993782204,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,A II + NA normalized', 'Starting sample 2 + NA,A II + NA,Starting sample 1 + NA normalized']"
-13,Otu49,1,1.21622%,1.34068%,1.102333459407015,['Starting sample 2 + NA normalized']
-14,Otu49,2,1.21622%,0.72339%,0.5947854828896088,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-15,Otu49,3,1.21622%,0.41965%,0.34504448208383354,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,MiPro + Crb normalized', 'Starting sample 2 + NA,MiPro + Crb,Starting sample 1 + NA normalized']"
-16,Otu1,1,0.32885%,98.31642%,298.97041204196444,['mGAM + Van normalized']
-17,Otu1,2,0.32885%,99.99198%,304.0656226242968,"['Mucus + Van normalized', 'Mucus + Van,M-17 Broth + NA normalized']"
-18,Otu1,3,0.32885%,99.99996%,304.08988900714616,"['BHI + Neo normalized', 'BHI + Neo,Mucus + Van normalized', 'BHI + Neo,Mucus + Van,Mucus + Neo normalized']"
-19,Otu78,1,0.1904%,6.54882%,34.395063025210085,['Postgate + Amp normalized']
-20,Otu78,2,0.1904%,4.94687%,25.98146008403361,"['Postgate + Amp normalized', 'Postgate + Amp,A II + NA normalized']"
-21,Otu78,3,0.1904%,3.09584%,16.259663865546216,"['A II + NA normalized', 'A II + NA,Postgate + Amp normalized', 'A II + NA,Postgate + Amp,Starting sample 1 + NA normalized']"
-22,Otu58,1,0.70718%,1.9071%,2.6967674425181705,['WSB + NA normalized']
-23,Otu58,2,0.70718%,2.44783%,3.461395967080517,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,WSB + NA normalized']"
-24,Otu58,3,0.70718%,1.68084%,2.376820611442631,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,WSB + NA normalized', 'Starting sample 1 + NA,WSB + NA,Starting sample 2 + NA normalized']"
-25,Otu9,1,5.23742%,5.77338%,1.1023328279954634,['Starting sample 2 + NA normalized']
-26,Otu9,2,5.23742%,13.89369%,2.6527736939179976,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-27,Otu9,3,5.23742%,31.65715%,6.044416907561357,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA,BMM - chondroitin sulfate + NA normalized']"
-28,Otu15,1,1.81116%,22.56754%,12.460268557167781,['mGAM + Kan normalized']
-29,Otu15,2,1.81116%,85.96683%,47.46506658715961,"['mGAM + Kan normalized', 'mGAM + Kan,R2A - Mannitol + NA normalized']"
-30,Otu15,3,1.81116%,98.91062%,54.611751584619796,"['WHC + NA normalized', 'WHC + NA,mGAM + Kan normalized', 'WHC + NA,mGAM + Kan,R2A - Soluble Starch + NA normalized']"
-31,Otu66,1,0.74078%,0.81658%,1.1023245767974297,['Starting sample 2 + NA normalized']
-32,Otu66,2,0.74078%,0.25893%,0.3495369745403494,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-33,Otu66,3,0.74078%,0.12868%,0.173708793433948,"['BHI + Amp Kan Ery normalized', 'BHI + Amp Kan Ery,Starting sample 2 + NA normalized', 'BHI + Amp Kan Ery,Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-34,Otu128,1,0.20921%,0.23062%,1.102337364370728,['Starting sample 2 + NA normalized']
-35,Otu128,2,0.20921%,0.02023%,0.09669709860905311,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-36,Otu8,1,5.43696%,5.99335%,1.1023347606015126,['Starting sample 2 + NA normalized']
-37,Otu8,2,5.43696%,14.84126%,2.72969821370766,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-38,Otu8,3,5.43696%,25.8655%,4.757346016891793,"['mGAM + NA normalized', 'mGAM + NA,Starting sample 2 + NA normalized', 'mGAM + NA,Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-39,Otu25,1,0.18604%,4.96418%,26.683401419049662,['AA + NA normalized']
-40,Otu25,2,0.18604%,1.56727%,8.424371102988603,"['A II + NA normalized', 'A II + NA,YCFA + NA normalized']"
-41,Otu25,3,0.18604%,0.54606%,2.9351752311330896,"['YCFA + NA normalized', 'YCFA + NA,Starting sample 1 + NA normalized', 'YCFA + NA,Starting sample 1 + NA,WHC + NA normalized']"
-42,Otu63,1,0.73597%,0.91702%,1.2460018750764297,['Starting sample 1 + NA normalized']
-43,Otu63,2,0.73597%,0.31227%,0.4242971860266043,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-44,Otu63,3,0.73597%,0.12415%,0.1686889411253176,"['BHI + Amp Kan Ery normalized', 'BHI + Amp Kan Ery,Starting sample 2 + NA normalized', 'BHI + Amp Kan Ery,Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-45,Otu2,1,0.835%,91.58092%,109.67774850299402,['YCFA + Kan normalized']
-46,Otu2,2,0.835%,99.97988%,119.73638323353293,"['YCFA + Kan normalized', 'YCFA + Kan,TGB + NA normalized']"
-47,Otu2,3,0.835%,99.99956%,119.75995209580839,"['TGB + NA normalized', 'TGB + NA,YCFA + Kan normalized', 'TGB + NA,YCFA + Kan,Reinforced Clostridial Broth + NA normalized']"
-48,Otu20,1,2.41395%,2.66098%,1.1023343482673627,['Starting sample 2 + NA normalized']
-49,Otu20,2,2.41395%,3.35993%,1.3918805277656954,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,MT10 + NA normalized']"
-50,Otu20,3,2.41395%,3.07517%,1.273916195447296,"['MT10 + NA normalized', 'MT10 + NA,Starting sample 1 + NA normalized', 'MT10 + NA,Starting sample 1 + NA,Starting sample 2 + NA normalized']"
-51,Otu48,1,0.94847%,2.15818%,2.275433065885057,['R2A - Resistant Starch + NA normalized']
-52,Otu48,2,0.94847%,2.88396%,3.040644406254283,"['R2A - Resistant Starch + NA normalized', 'R2A - Resistant Starch + NA,Starting sample 1 + NA normalized']"
-53,Otu48,3,0.94847%,2.26988%,2.393201682710049,"['R2A - Resistant Starch + NA normalized', 'R2A - Resistant Starch + NA,Starting sample 1 + NA normalized', 'R2A - Resistant Starch + NA,Starting sample 1 + NA,Starting sample 2 + NA normalized']"
-54,Otu95,1,0.35834%,0.4067%,1.1349556287324887,['Starting sample 1 + NA normalized']
-55,Otu95,2,0.35834%,0.06816%,0.19021041468995925,"['YCFA + Pen Crb Cip normalized', 'YCFA + Pen Crb Cip,Starting sample 1 + NA normalized']"
-56,Otu95,3,0.35834%,0.0209%,0.05832449628844114,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,YCFA + Pen Crb Cip normalized', 'Starting sample 2 + NA,YCFA + Pen Crb Cip,Starting sample 1 + NA normalized']"
-57,Otu142,1,0.147%,0.16205%,1.1023809523809525,['Starting sample 2 + NA normalized']
-58,Otu142,2,0.147%,0.01073%,0.07299319727891157,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-59,Otu98,1,0.37117%,0.42471%,1.1442465716518038,['Starting sample 1 + NA normalized']
-60,Otu98,2,0.37117%,0.07294%,0.19651372686370128,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-61,Otu45,1,0.75466%,2.64619%,3.50646648821986,['R2A - chondroitin sulfate + NA normalized']
-62,Otu45,2,0.75466%,6.03028%,7.990724299684627,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,R2A - chondroitin sulfate + NA normalized']"
-63,Otu45,3,0.75466%,5.38082%,7.130124824424244,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,R2A - chondroitin sulfate + NA normalized', 'Starting sample 1 + NA,R2A - chondroitin sulfate + NA,Starting sample 2 + NA normalized']"
-64,Otu50,1,1.17421%,1.29438%,1.1023411485168753,['Starting sample 2 + NA normalized']
-65,Otu50,2,1.17421%,0.67883%,0.5781163505676157,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-66,Otu50,3,1.17421%,0.45676%,0.38899345091593496,"['Mucus + Amp Kan Ery normalized', 'Mucus + Amp Kan Ery,Starting sample 2 + NA normalized', 'Mucus + Amp Kan Ery,Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-67,Otu103,1,0.31362%,0.34572%,1.1023531662521524,['Starting sample 2 + NA normalized']
-68,Otu103,2,0.31362%,0.0471%,0.15018174861297112,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-69,Otu4,1,0.96853%,26.83769%,27.70971472231113,['AA + NA normalized']
-70,Otu4,2,0.96853%,47.56564%,49.111168471807794,"['A II + NA normalized', 'A II + NA,YCFA + NA normalized']"
-71,Otu4,3,0.96853%,83.26634%,85.97187490320383,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,YCFA + NA normalized', 'Starting sample 1 + NA,YCFA + NA,WHC + NA normalized']"
-72,Otu11,1,0.14147%,96.22999%,680.2148158620201,['BHI + Cip normalized']
-73,Otu11,2,0.14147%,99.86303%,705.8954548667562,"['YCFA + Neo normalized', 'YCFA + Neo,BHI + Cip normalized']"
-74,Otu11,3,0.14147%,99.99634%,706.8377747932424,"['BHI + Cip normalized', 'BHI + Cip,WCA + NA normalized', 'BHI + Cip,WCA + NA,mGAM + Kan normalized']"
-75,Otu30,1,0.16712%,4.74239%,28.377154140737197,['AA + NA normalized']
-76,Otu30,2,0.16712%,1.55934%,9.330660603159407,"['WHC + NA normalized', 'WHC + NA,YCFA + NA normalized']"
-77,Otu30,3,0.16712%,0.49249%,2.9469243657252275,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,YCFA + NA normalized', 'Starting sample 1 + NA,YCFA + NA,WHC + NA normalized']"
-78,Otu35,1,1.60643%,2.01491%,1.2542781198060295,['Starting sample 1 + NA normalized']
-79,Otu35,2,1.60643%,1.49764%,0.9322784061552636,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-80,Otu35,3,1.60643%,0.7408%,0.46114676643239977,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,MT10 + NA normalized', 'Starting sample 2 + NA,MT10 + NA,Starting sample 1 + NA normalized']"
-81,Otu122,1,0.21064%,0.23219%,1.1023072540827954,['Starting sample 2 + NA normalized']
-82,Otu122,2,0.21064%,0.0431%,0.2046145081655906,"['YCFA + Pen Crb Cip normalized', 'YCFA + Pen Crb Cip,Starting sample 1 + NA normalized']"
-83,Otu122,3,0.21064%,0.00777%,0.03688758070641854,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA,YCFA + Pen Crb Cip normalized']"
-84,Otu77,1,0.54103%,0.59639%,1.1023233462100068,['Starting sample 2 + NA normalized']
-85,Otu77,2,0.54103%,0.14456%,0.26719405578248895,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-86,Otu77,3,0.54103%,0.04847%,0.08958837772397094,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA,YCFA + Amp normalized']"
-87,Otu91,1,0.40759%,0.4493%,1.1023332270173458,['Starting sample 2 + NA normalized']
-88,Otu91,2,0.40759%,0.08046%,0.19740425427512942,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-89,Otu155,1,0.11955%,0.13179%,1.102383939774153,['Starting sample 2 + NA normalized']
-90,Otu155,2,0.11955%,0.00703%,0.05880384776244249,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-91,Otu99,1,0.35741%,0.39398%,1.10231946504015,['Starting sample 2 + NA normalized']
-92,Otu99,2,0.35741%,0.17085%,0.47802243921546683,"['Postgate + Amp Kan Ery normalized', 'Postgate + Amp Kan Ery,Starting sample 1 + NA normalized']"
-93,Otu99,3,0.35741%,0.07329%,0.20505861615511595,"['Postgate + Amp Kan Ery normalized', 'Postgate + Amp Kan Ery,Starting sample 1 + NA normalized', 'Postgate + Amp Kan Ery,Starting sample 1 + NA,Starting sample 2 + NA normalized']"
-94,Otu67,1,0.32687%,70.09165%,214.43280203138863,['Postgate + Cip normalized']
-95,Otu67,2,0.32687%,87.11395%,266.50946859607797,"['Yeast Casitone + NA normalized', 'Yeast Casitone + NA,Postgate + Cip normalized']"
-96,Otu67,3,0.32687%,90.80615%,277.8050907088445,"['Postgate + Cip normalized', 'Postgate + Cip,Starting sample 1 + NA normalized', 'Postgate + Cip,Starting sample 1 + NA,Yeast Casitone + NA normalized']"
-97,Otu21,1,2.3167%,2.55378%,1.1023352181982995,['Starting sample 2 + NA normalized']
-98,Otu21,2,2.3167%,2.63172%,1.135977899598567,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-99,Otu21,3,2.3167%,2.11623%,0.9134674321232787,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,COR + NA normalized', 'Starting sample 2 + NA,COR + NA,Starting sample 1 + NA normalized']"
-100,Otu13,1,0.18254%,86.9365%,476.25999780869944,['MiPro + Kan normalized']
-101,Otu13,2,0.18254%,99.57135%,545.4768817793359,"['MiPro + Kan normalized', 'MiPro + Kan,BHI + NA normalized']"
-102,Otu13,3,0.18254%,99.98133%,547.7228552645995,"['BHI + NA normalized', 'BHI + NA,MiPro + Kan normalized', 'BHI + NA,MiPro + Kan,mGAM + Kan normalized']"
-103,Otu168,1,0.10619%,0.11706%,1.1023636877295413,['Starting sample 2 + NA normalized']
-104,Otu168,2,0.10619%,0.00571%,0.05377154157641962,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-105,Otu146,1,0.14831%,0.16349%,1.1023531791517767,['Starting sample 2 + NA normalized']
-106,Otu146,2,0.14831%,0.02622%,0.17679185489852337,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,5% Sheep Blood + Amp Kan Ery normalized']"
-107,Otu146,3,0.14831%,0.00376%,0.025352302609399233,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,5% Sheep Blood + Amp Kan Ery normalized', 'Starting sample 2 + NA,5% Sheep Blood + Amp Kan Ery,Starting sample 1 + NA normalized']"
-108,Otu150,1,0.12942%,0.14266%,1.1023025807448616,['Starting sample 2 + NA normalized']
-109,Otu150,2,0.12942%,0.02669%,0.20622778550455878,"['BHI + FBS (5%) + Amp Kan Ery normalized', 'BHI + FBS (5%) + Amp Kan Ery,Starting sample 1 + NA normalized']"
-110,Otu150,3,0.12942%,0.0041%,0.03167980219440581,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA,BHI + FBS (5%) + Amp Kan Ery normalized']"
-111,Otu118,1,0.21931%,0.25066%,1.1429483379690848,['Starting sample 1 + NA normalized']
-112,Otu118,2,0.21931%,0.02544%,0.11600018239022389,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-113,Otu32,1,1.98657%,2.18986%,1.1023321604574718,['Starting sample 2 + NA normalized']
-114,Otu32,2,1.98657%,1.68776%,0.8495849630267245,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-115,Otu32,3,1.98657%,1.67755%,0.8444454512048406,"['BHI + Amp Kan Ery normalized', 'BHI + Amp Kan Ery,Starting sample 1 + NA normalized', 'BHI + Amp Kan Ery,Starting sample 1 + NA,Starting sample 2 + NA normalized']"
-116,Otu123,1,0.24798%,0.28549%,1.1512621985644005,['Starting sample 1 + NA normalized']
-117,Otu123,2,0.24798%,0.03276%,0.13210742801838857,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-118,Otu38,1,1.51963%,1.67513%,1.1023275402565098,['Starting sample 2 + NA normalized']
-119,Otu38,2,1.51963%,1.16937%,0.7695096832781664,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-120,Otu38,3,1.51963%,0.99676%,0.6559228233188341,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA,BHI + FBS (5%) + Amp Kan Ery normalized']"
-121,Otu64,1,0.82848%,0.91326%,1.1023319814600232,['Starting sample 2 + NA normalized']
-122,Otu64,2,0.82848%,0.33998%,0.4103659714175357,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-123,Otu64,3,0.82848%,0.17388%,0.20987833140208575,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA,BHI + FBS (5%) + Amp Kan Ery normalized']"
-124,Otu36,1,1.6643%,1.83461%,1.1023313104608545,['Starting sample 2 + NA normalized']
-125,Otu36,2,1.6643%,1.29017%,0.7752027879589017,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-126,Otu36,3,1.6643%,1.13543%,0.6822267620020429,"['YCFA + Amp normalized', 'YCFA + Amp,Starting sample 2 + NA normalized', 'YCFA + Amp,Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-127,Otu140,1,0.14526%,0.16229%,1.1172380558997659,['Starting sample 1 + NA normalized']
-128,Otu140,2,0.14526%,0.01091%,0.07510670521822937,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-129,Otu112,1,0.2217%,0.27919%,1.2593143888137122,['Starting sample 1 + NA normalized']
-130,Otu112,2,0.2217%,0.04322%,0.19494812810103743,"['Mucus + Amp Kan Ery normalized', 'Mucus + Amp Kan Ery,Starting sample 1 + NA normalized']"
-131,Otu112,3,0.2217%,0.00963%,0.04343707713125845,"['Mucus + Amp Kan Ery normalized', 'Mucus + Amp Kan Ery,Starting sample 2 + NA normalized', 'Mucus + Amp Kan Ery,Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-132,Otu6,1,4.95614%,6.60267%,1.332220235909397,['Starting sample 1 + NA normalized']
-133,Otu6,2,4.95614%,23.0748%,4.6558006835965084,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,WHC + NA normalized']"
-134,Otu6,3,4.95614%,64.86581%,13.087969669944753,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,WHC + NA normalized', 'Starting sample 1 + NA,WHC + NA,Starting sample 2 + NA normalized']"
-135,Otu31,1,0.84499%,14.51866%,17.18204949170996,['5% Sheep Blood + Van normalized']
-136,Otu31,2,0.84499%,38.5548%,45.62752221919786,"['5% Sheep Blood + Van normalized', '5% Sheep Blood + Van,Starting sample 1 + NA normalized']"
-137,Otu31,3,0.84499%,53.17867%,62.93408206014272,"['5% Sheep Blood + Van normalized', '5% Sheep Blood + Van,Starting sample 1 + NA normalized', '5% Sheep Blood + Van,Starting sample 1 + NA,Starting sample 2 + NA normalized']"
-138,Otu72,1,0.65103%,0.71765%,1.1023301537563552,['Starting sample 2 + NA normalized']
-139,Otu72,2,0.65103%,0.19763%,0.3035651198869484,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-140,Otu72,3,0.65103%,0.05893%,0.09051810208438936,"['BHI + Amp Kan Ery normalized', 'BHI + Amp Kan Ery,Starting sample 1 + NA normalized', 'BHI + Amp Kan Ery,Starting sample 1 + NA,Starting sample 2 + NA normalized']"
-141,Otu73,1,0.62166%,0.68528%,1.1023388990766658,['Starting sample 2 + NA normalized']
-142,Otu73,2,0.62166%,0.18631%,0.2996975838882991,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-143,Otu73,3,0.62166%,0.06246%,0.10047292732361741,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA,YCFA + Amp normalized']"
-144,Otu27,1,1.85826%,2.05496%,1.1058517107401546,['Starting sample 1 + NA normalized']
-145,Otu27,2,1.85826%,1.76685%,0.9508088211552743,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-146,Otu27,3,1.85826%,0.81905%,0.44076178790911924,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA,YCFA + Van Amp Ery normalized']"
-147,Otu75,1,0.43772%,0.66451%,1.5181166042218772,['Starting sample 1 + NA normalized']
-148,Otu75,2,0.43772%,0.13458%,0.3074568217125103,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-149,Otu96,1,0.3726%,0.41155%,1.1045356951154053,['Starting sample 1 + NA normalized']
-150,Otu96,2,0.3726%,0.07095%,0.19041867954911434,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-151,Otu96,3,0.3726%,0.02387%,0.06406333870101986,"['Mucus + Amp Kan Ery normalized', 'Mucus + Amp Kan Ery,Starting sample 2 + NA normalized', 'Mucus + Amp Kan Ery,Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-152,Otu23,1,1.15296%,62.56357%,54.26343498473494,['mGAM + Cip normalized']
-153,Otu23,2,1.15296%,89.7293%,77.82516305856231,"['mGAM + Cip normalized', 'mGAM + Cip,mGAM + Kan normalized']"
-154,Otu23,3,1.15296%,96.31484%,83.5370177629753,"['mGAM + Cip normalized', 'mGAM + Cip,mGAM + Kan normalized', 'mGAM + Cip,mGAM + Kan,MiPro + NA normalized']"
-155,Otu170,1,0.1006%,0.11202%,1.1135188866799204,['Starting sample 1 + NA normalized']
-156,Otu170,2,0.1006%,0.00521%,0.051789264413518894,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-157,Otu76,1,0.56661%,0.6246%,1.1023455286705144,['Starting sample 2 + NA normalized']
-158,Otu76,2,0.56661%,0.15694%,0.2769806392403946,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-159,Otu76,3,0.56661%,0.08026%,0.14164945906355342,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA,BHI + FBS (5%) + Amp Kan Ery normalized']"
-160,Otu115,1,0.23573%,0.25985%,1.1023204513638487,['Starting sample 2 + NA normalized']
-161,Otu115,2,0.23573%,0.02803%,0.1189072243668604,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-162,Otu114,1,0.24155%,0.26828%,1.110660318774581,['Starting sample 1 + NA normalized']
-163,Otu114,2,0.24155%,0.02998%,0.12411509004346927,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-164,Otu79,1,0.48281%,0.55195%,1.1432033305026823,['Starting sample 1 + NA normalized']
-165,Otu79,2,0.48281%,0.45154%,0.9352333215964872,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,WHC + NA normalized']"
-166,Otu79,3,0.48281%,0.14507%,0.30047016424680517,"['Postgate + Amp normalized', 'Postgate + Amp,Starting sample 1 + NA normalized', 'Postgate + Amp,Starting sample 1 + NA,WHC + NA normalized']"
-167,Otu57,1,0.98751%,1.08856%,1.1023280776903526,['Starting sample 2 + NA normalized']
-168,Otu57,2,0.98751%,0.48862%,0.4948000526576946,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-169,Otu57,3,0.98751%,0.20196%,0.2045143846644591,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA,YCFA + Pen Crb Cip normalized']"
-170,Otu116,1,0.23244%,0.25622%,1.1023059714334882,['Starting sample 2 + NA normalized']
-171,Otu116,2,0.23244%,0.02697%,0.11602994321115126,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-172,Otu107,1,0.29182%,0.32168%,1.1023233500102803,['Starting sample 2 + NA normalized']
-173,Otu107,2,0.29182%,0.03926%,0.13453498732095126,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA normalized']"
-174,Otu160,1,0.11801%,0.13009%,1.1023642064231844,['Starting sample 2 + NA normalized']
-175,Otu160,2,0.11801%,0.00704%,0.059655961359206845,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-176,Otu133,1,0.17009%,0.18749%,1.1022987829972368,['Starting sample 2 + NA normalized']
-177,Otu133,2,0.17009%,0.01326%,0.07795872773237697,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-178,Otu44,1,1.26536%,1.39484%,1.1023266106088385,['Starting sample 2 + NA normalized']
-179,Otu44,2,1.26536%,0.79929%,0.6316700385660997,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-180,Otu44,3,1.26536%,0.34885%,0.2756922931023582,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,MT10 + NA normalized', 'Starting sample 2 + NA,MT10 + NA,Starting sample 1 + NA normalized']"
-181,Otu53,1,1.05542%,1.16342%,1.1023289306626745,['Starting sample 2 + NA normalized']
-182,Otu53,2,1.05542%,1.3646%,1.2929449887248678,"['A II + NA normalized', 'A II + NA,Starting sample 1 + NA normalized']"
-183,Otu53,3,1.05542%,1.2244%,1.1601068768831364,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,A II + NA normalized', 'Starting sample 2 + NA,A II + NA,Starting sample 1 + NA normalized']"
-184,Otu52,1,0.45111%,60.92426%,135.05411097071666,['5% Sheep Blood + Ery normalized']
-185,Otu52,2,0.45111%,94.64627%,209.80751923034293,"['5% Sheep Blood + Ery normalized', '5% Sheep Blood + Ery,BMM - raffinose + NA normalized']"
-186,Otu52,3,0.45111%,94.17894%,208.7715634767573,"['5% Sheep Blood + Ery normalized', '5% Sheep Blood + Ery,BMM - raffinose + NA normalized', '5% Sheep Blood + Ery,BMM - raffinose + NA,Starting sample 1 + NA normalized']"
-187,Otu105,1,0.28978%,0.31944%,1.1023535095589758,['Starting sample 2 + NA normalized']
-188,Otu105,2,0.28978%,0.04092%,0.1412105735385465,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-189,Otu16,1,3.49746%,3.85537%,1.1023342654383468,['Starting sample 2 + NA normalized']
-190,Otu16,2,3.49746%,6.07692%,1.7375238029884548,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-191,Otu16,3,3.49746%,5.56942%,1.5924184979956884,"['NCMM - Mucin + NA normalized', 'NCMM - Mucin + NA,Starting sample 2 + NA normalized', 'NCMM - Mucin + NA,Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-192,Otu171,1,0.10002%,0.11063%,1.1060787842431514,['Starting sample 1 + NA normalized']
-193,Otu171,2,0.10002%,0.00512%,0.05118976204759049,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-194,Otu89,1,0.44197%,0.4872%,1.1023372627101389,['Starting sample 2 + NA normalized']
-195,Otu89,2,0.44197%,0.09186%,0.20784216123266286,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-196,Otu101,1,0.19032%,0.65665%,3.4502416981925177,['R2A - chondroitin sulfate + NA normalized']
-197,Otu101,2,0.19032%,0.39371%,2.0686738125262716,"['R2A - chondroitin sulfate + NA normalized', 'R2A - chondroitin sulfate + NA,Starting sample 1 + NA normalized']"
-198,Otu101,3,0.19032%,0.0886%,0.4655317360235393,"['R2A - chondroitin sulfate + NA normalized', 'R2A - chondroitin sulfate + NA,Starting sample 2 + NA normalized', 'R2A - chondroitin sulfate + NA,Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-199,Otu62,1,0.89977%,0.99185%,1.1023372639674585,['Starting sample 2 + NA normalized']
-200,Otu62,2,0.89977%,0.39042%,0.43391088833813085,"['BHI + Amp Kan Ery normalized', 'BHI + Amp Kan Ery,Starting sample 1 + NA normalized']"
-201,Otu62,3,0.89977%,0.29888%,0.33217377774320106,"['BHI + Amp Kan Ery normalized', 'BHI + Amp Kan Ery,Starting sample 1 + NA normalized', 'BHI + Amp Kan Ery,Starting sample 1 + NA,Starting sample 2 + NA normalized']"
-202,Otu121,1,0.20409%,0.23847%,1.168455093341173,['Starting sample 1 + NA normalized']
-203,Otu121,2,0.20409%,0.02252%,0.11034347591748737,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-204,Otu139,1,0.12762%,0.23682%,1.855665256229431,['A II + NA normalized']
-205,Otu139,2,0.12762%,0.0479%,0.3753330199028365,"['A II + NA normalized', 'A II + NA,Starting sample 1 + NA normalized']"
-206,Otu139,3,0.12762%,0.0052%,0.040745964582353855,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA,A II + NA normalized']"
-207,Otu39,1,0.22079%,27.35929%,123.91544001087007,['BMM - Inulin + NA normalized']
-208,Otu39,2,0.22079%,81.20982%,367.8147561030844,"['mGAM + Kan normalized', 'mGAM + Kan,BMM - Inulin + NA normalized']"
-209,Otu39,3,0.22079%,96.75929%,438.2412699850537,"['BMM - Inulin + NA normalized', 'BMM - Inulin + NA,5% Sheep Blood + Kan normalized', 'BMM - Inulin + NA,5% Sheep Blood + Kan,mGAM + NA normalized']"
-210,Otu43,1,1.61665%,1.78208%,1.1023288899885566,['Starting sample 2 + NA normalized']
-211,Otu43,2,1.61665%,1.3111%,0.8109980515263044,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-212,Otu43,3,1.61665%,0.55951%,0.3460922277549253,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA,MT10 + NA normalized']"
-213,Otu137,1,0.15533%,0.17122%,1.1022983325822444,['Starting sample 2 + NA normalized']
-214,Otu137,2,0.15533%,0.01112%,0.07158951908839245,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-215,Otu145,1,0.14304%,0.15768%,1.1023489932885906,['Starting sample 2 + NA normalized']
-216,Otu145,2,0.14304%,0.02051%,0.1433864653243848,"['YCFA + Van Amp Ery normalized', 'YCFA + Van Amp Ery,Starting sample 1 + NA normalized']"
-217,Otu145,3,0.14304%,0.00211%,0.014751118568232661,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA,YCFA + Van Amp Ery normalized']"
-218,Otu132,1,0.16406%,0.18085%,1.1023406070949653,['Starting sample 2 + NA normalized']
-219,Otu132,2,0.16406%,0.01362%,0.08301840789954894,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-220,Otu86,1,0.44255%,0.49513%,1.118811433736301,['Starting sample 1 + NA normalized']
-221,Otu86,2,0.44255%,0.10139%,0.22910405603886566,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA normalized']"
-222,Otu47,1,0.16816%,37.26537%,221.60662464319694,['BMM - Inulin + NA normalized']
-223,Otu47,2,0.16816%,98.85281%,587.849726450999,"['YCFA + Kan normalized', 'YCFA + Kan,BMM - Inulin + NA normalized']"
-224,Otu47,3,0.16816%,99.58446%,592.2006422454805,"['BMM - Inulin + NA normalized', 'BMM - Inulin + NA,YCFA + Kan normalized', 'BMM - Inulin + NA,YCFA + Kan,YCFA + Neo normalized']"
-225,Otu82,1,0.53422%,0.58888%,1.1023173973269438,['Starting sample 2 + NA normalized']
-226,Otu82,2,0.53422%,0.13697%,0.25639249747295123,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-227,Otu82,3,0.53422%,0.01594%,0.029837894500393095,"['MT10 + NA normalized', 'MT10 + NA,Starting sample 1 + NA normalized', 'MT10 + NA,Starting sample 1 + NA,Starting sample 2 + NA normalized']"
-228,Otu46,1,1.1902%,1.3166%,1.1062006385481433,['Starting sample 1 + NA normalized']
-229,Otu46,2,1.1902%,2.74689%,2.3079230381448497,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,WHC + NA normalized']"
-230,Otu46,3,1.1902%,1.85436%,1.5580238615358764,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,WHC + NA normalized', 'Starting sample 1 + NA,WHC + NA,Starting sample 2 + NA normalized']"
-231,Otu127,1,0.20158%,0.22221%,1.102341502133148,['Starting sample 2 + NA normalized']
-232,Otu127,2,0.20158%,0.01969%,0.09767834110526837,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-233,Otu71,1,0.19003%,6.30995%,33.20502025995895,['5% Sheep Blood + Van normalized']
-234,Otu71,2,0.19003%,5.00187%,26.32147555649108,"['Mucus + Van normalized', 'Mucus + Van,Starting sample 1 + NA normalized']"
-235,Otu71,3,0.19003%,2.60916%,13.730253117928749,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA,Mucus + Van normalized']"
-236,Otu60,1,0.89651%,0.98825%,1.1023301469029905,['Starting sample 2 + NA normalized']
-237,Otu60,2,0.89651%,0.39855%,0.44455722747097076,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-238,Otu60,3,0.89651%,0.2773%,0.30931054868322716,"['BHI + Amp Kan Ery normalized', 'BHI + Amp Kan Ery,Starting sample 2 + NA normalized', 'BHI + Amp Kan Ery,Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-239,Otu28,1,1.68465%,2.10624%,1.250253761909002,['Starting sample 1 + NA normalized']
-240,Otu28,2,1.68465%,1.64174%,0.9745288338824089,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-241,Otu28,3,1.68465%,0.74839%,0.4442406434570979,"['MT10 + NA normalized', 'MT10 + NA,Starting sample 1 + NA normalized', 'MT10 + NA,Starting sample 1 + NA,Starting sample 2 + NA normalized']"
-242,Otu97,1,0.15742%,3.20638%,20.36831406428662,['5% Sheep Blood + Van normalized']
-243,Otu97,2,0.15742%,1.88101%,11.948989963155888,"['5% Sheep Blood + Van normalized', '5% Sheep Blood + Van,Starting sample 1 + NA normalized']"
-244,Otu97,3,0.15742%,0.48336%,3.0705120060983355,"['5% Sheep Blood + Van normalized', '5% Sheep Blood + Van,Starting sample 1 + NA normalized', '5% Sheep Blood + Van,Starting sample 1 + NA,Starting sample 2 + NA normalized']"
-245,Otu59,1,0.22964%,10.46624%,45.57672879289323,['5% Sheep Blood + Van normalized']
-246,Otu59,2,0.22964%,9.1874%,40.00783835568716,"['Mucus + Van normalized', 'Mucus + Van,Starting sample 1 + NA normalized']"
-247,Otu59,3,0.22964%,6.83503%,29.76410904023689,"['5% Sheep Blood + Van normalized', '5% Sheep Blood + Van,TGB + NA normalized', '5% Sheep Blood + Van,TGB + NA,Starting sample 1 + NA normalized']"
-248,Otu131,1,0.17728%,0.19542%,1.1023240072202167,['Starting sample 2 + NA normalized']
-249,Otu131,2,0.17728%,0.01456%,0.08212996389891697,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-250,Otu154,1,0.12159%,0.13403%,1.1023110453162268,['Starting sample 2 + NA normalized']
-251,Otu154,2,0.12159%,0.00721%,0.059297639608520435,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-252,Otu117,1,0.2398%,0.26434%,1.1023352793994996,['Starting sample 2 + NA normalized']
-253,Otu117,2,0.2398%,0.02739%,0.11422018348623852,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-254,Otu100,1,0.24117%,0.64921%,2.6919185636687812,['WCA + NA normalized']
-255,Otu100,2,0.24117%,0.63355%,2.6269851142347718,"['LB + NA normalized', 'LB + NA,Starting sample 1 + NA normalized']"
-256,Otu100,3,0.24117%,0.16571%,0.6871086785255214,"['LB + NA normalized', 'LB + NA,Starting sample 2 + NA normalized', 'LB + NA,Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-257,Otu51,1,0.14441%,27.96253%,193.6329201578838,['BMM - raffinose + NA normalized']
-258,Otu51,2,0.14441%,95.58152%,661.8760473651408,"['mGAM + Kan normalized', 'mGAM + Kan,BMM - raffinose + NA normalized']"
-259,Otu51,3,0.14441%,97.54691%,675.4858389308218,"['BMM - raffinose + NA normalized', 'BMM - raffinose + NA,mGAM + NA normalized', 'BMM - raffinose + NA,mGAM + NA,mGAM + Kan normalized']"
-260,Otu81,1,0.54205%,0.59752%,1.1023337330504566,['Starting sample 2 + NA normalized']
-261,Otu81,2,0.54205%,0.13804%,0.2546628539802601,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-262,Otu81,3,0.54205%,0.0706%,0.13024628724287426,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA,BHI + FBS (5%) + Amp Kan Ery normalized']"
-263,Otu163,1,0.11612%,0.128%,1.1023079572855667,['Starting sample 2 + NA normalized']
-264,Otu163,2,0.11612%,0.01959%,0.16870478815018947,"['Mucus + Pen Crb Cip normalized', 'Mucus + Pen Crb Cip,Starting sample 1 + NA normalized']"
-265,Otu163,3,0.11612%,0.00175%,0.015070616603513607,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Mucus + Pen Crb Cip normalized', 'Starting sample 2 + NA,Mucus + Pen Crb Cip,Starting sample 1 + NA normalized']"
-266,Otu110,1,0.26295%,0.28985%,1.1023008176459401,['Starting sample 2 + NA normalized']
-267,Otu110,2,0.26295%,0.08082%,0.3073588134626355,"['Mucus + Amp Kan Ery normalized', 'Mucus + Amp Kan Ery,Starting sample 1 + NA normalized']"
-268,Otu110,3,0.26295%,0.02137%,0.08127020346073398,"['Mucus + Amp Kan Ery normalized', 'Mucus + Amp Kan Ery,Starting sample 2 + NA normalized', 'Mucus + Amp Kan Ery,Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-269,Otu161,1,0.10159%,0.12663%,1.2464809528496898,['Starting sample 1 + NA normalized']
-270,Otu161,2,0.10159%,0.00595%,0.058568756767398374,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-271,Otu149,1,0.13254%,0.1461%,1.1023087369850613,['Starting sample 2 + NA normalized']
-272,Otu149,2,0.13254%,0.00801%,0.060434585785423274,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-273,Otu22,1,1.26611%,21.51045%,16.98940060500272,['5% Sheep Blood + Kan normalized']
-274,Otu22,2,1.26611%,57.91931%,45.74587516092598,"['BMM - raffinose + NA normalized', 'BMM - raffinose + NA,5% Sheep Blood + Kan normalized']"
-275,Otu22,3,1.26611%,98.17835%,77.54330192479325,"['5% Sheep Blood + Kan normalized', '5% Sheep Blood + Kan,WCA + NA normalized', '5% Sheep Blood + Kan,WCA + NA,BMM - raffinose + NA normalized']"
-276,Otu151,1,0.13032%,0.14366%,1.102363413136894,['Starting sample 2 + NA normalized']
-277,Otu151,2,0.13032%,0.00787%,0.06038980969920197,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-278,Otu164,1,0.1305%,0.15973%,1.223984674329502,['Mucus + Amp Kan Ery normalized']
-279,Otu164,2,0.1305%,0.02609%,0.19992337164750956,"['Mucus + Amp Kan Ery normalized', 'Mucus + Amp Kan Ery,Starting sample 1 + NA normalized']"
-280,Otu164,3,0.1305%,0.00342%,0.026206896551724135,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Mucus + Amp Kan Ery normalized', 'Starting sample 1 + NA,Mucus + Amp Kan Ery,Starting sample 2 + NA normalized']"
-281,Otu157,1,0.12147%,0.1339%,1.1023297933646168,['Starting sample 2 + NA normalized']
-282,Otu157,2,0.12147%,0.00721%,0.05935621964271014,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-283,Otu113,1,0.2536%,0.27955%,1.102326498422713,['Starting sample 2 + NA normalized']
-284,Otu113,2,0.2536%,0.02991%,0.1179416403785489,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-285,Otu68,1,0.67845%,0.74788%,1.1023362075318741,['Starting sample 2 + NA normalized']
-286,Otu68,2,0.67845%,0.22744%,0.33523472621416467,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-287,Otu68,3,0.67845%,0.07386%,0.10886579703736457,"['mGAM + Amp Kan Ery normalized', 'mGAM + Amp Kan Ery,Starting sample 1 + NA normalized', 'mGAM + Amp Kan Ery,Starting sample 1 + NA,Starting sample 2 + NA normalized']"
-288,Otu80,1,0.31045%,6.41065%,20.6495409888871,['WHC + NA normalized']
-289,Otu80,2,0.31045%,11.85227%,38.17770977613142,"['WHC + NA normalized', 'WHC + NA,Postgate + Kan normalized']"
-290,Otu80,3,0.31045%,14.62538%,47.11025930101466,"['WHC + NA normalized', 'WHC + NA,Starting sample 1 + NA normalized', 'WHC + NA,Starting sample 1 + NA,Postgate + Kan normalized']"
-291,Otu7,1,5.51233%,6.08039%,1.1030526111462848,['Starting sample 1 + NA normalized']
-292,Otu7,2,5.51233%,15.50799%,2.8133275765420427,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-293,Otu7,3,5.51233%,20.75667%,3.7654984371400113,"['MT10 + NA normalized', 'MT10 + NA,Starting sample 1 + NA normalized', 'MT10 + NA,Starting sample 1 + NA,Starting sample 2 + NA normalized']"
-294,Otu34,1,1.74784%,1.92671%,1.1023377425851335,['Starting sample 2 + NA normalized']
-295,Otu34,2,1.74784%,1.52246%,0.8710522702306847,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-296,Otu34,3,1.74784%,0.81263%,0.4649338612229952,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA,YCFA + Ery normalized']"
-297,Otu129,1,0.18837%,0.20764%,1.1022986675160587,['Starting sample 2 + NA normalized']
-298,Otu129,2,0.18837%,0.01804%,0.09576896533418272,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-299,Otu70,1,0.14977%,10.44424%,69.73519396407826,['WHC + NA normalized']
-300,Otu70,2,0.14977%,27.23705%,181.85918408225947,"['WHC + NA normalized', 'WHC + NA,Postgate + Kan normalized']"
-301,Otu70,3,0.14977%,17.30518%,115.54503572143955,"['WHC + NA normalized', 'WHC + NA,Starting sample 1 + NA normalized', 'WHC + NA,Starting sample 1 + NA,Postgate + Kan normalized']"
-302,Otu102,1,0.36818%,0.40585%,1.1023140855016567,['Starting sample 2 + NA normalized']
-303,Otu102,2,0.36818%,0.06044%,0.16415883535227335,"['mGAM + Amp Kan Ery normalized', 'mGAM + Amp Kan Ery,Starting sample 1 + NA normalized']"
-304,Otu102,3,0.36818%,0.0167%,0.045358248682709545,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA,mGAM + Amp Kan Ery normalized']"
-305,Otu93,1,0.41152%,0.45363%,1.1023279548989113,['Starting sample 2 + NA normalized']
-306,Otu93,2,0.41152%,0.11763%,0.2858427293934681,"['YCFA + Van Amp Ery normalized', 'YCFA + Van Amp Ery,Starting sample 1 + NA normalized']"
-307,Otu93,3,0.41152%,0.03489%,0.08478324261275272,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA,YCFA + Van Amp Ery normalized']"
-308,Otu130,1,0.19972%,0.22016%,1.10234328059283,['Starting sample 2 + NA normalized']
-309,Otu130,2,0.19972%,0.03953%,0.19792709793711197,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,YCFA + Van Amp Ery normalized']"
-310,Otu130,3,0.19972%,0.0056%,0.028039254956939715,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA,YCFA + Van Amp Ery normalized']"
-311,Otu120,1,0.2364%,0.26059%,1.1023265651438239,['Starting sample 2 + NA normalized']
-312,Otu120,2,0.2364%,0.07178%,0.3036379018612521,"['mGAM + Amp Kan Ery normalized', 'mGAM + Amp Kan Ery,Starting sample 1 + NA normalized']"
-313,Otu120,3,0.2364%,0.01274%,0.0538917089678511,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA normalized', 'Starting sample 1 + NA,Starting sample 2 + NA,mGAM + Amp Kan Ery normalized']"
-314,Otu83,1,0.44907%,0.49503%,1.102344846015098,['Starting sample 2 + NA normalized']
-315,Otu83,2,0.44907%,0.10181%,0.2267129846126439,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-316,Otu83,3,0.44907%,0.01679%,0.03738838043066782,"['MT10 + NA normalized', 'MT10 + NA,Starting sample 1 + NA normalized', 'MT10 + NA,Starting sample 1 + NA,Starting sample 2 + NA normalized']"
-317,Otu159,1,0.12217%,0.20068%,1.6426291233527053,['5% Sheep Blood + Amp Kan Ery normalized']
-318,Otu159,2,0.12217%,0.03462%,0.2833756241303102,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,5% Sheep Blood + Amp Kan Ery normalized']"
-319,Otu159,3,0.12217%,0.00409%,0.03347794057460915,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,5% Sheep Blood + Amp Kan Ery normalized', 'Starting sample 2 + NA,5% Sheep Blood + Amp Kan Ery,Starting sample 1 + NA normalized']"
-320,Otu104,1,0.27977%,0.31668%,1.1319297994781428,['Starting sample 1 + NA normalized']
-321,Otu104,2,0.27977%,0.04099%,0.14651320727740644,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-322,Otu119,1,0.2391%,0.2652%,1.1091593475533248,['Starting sample 1 + NA normalized']
-323,Otu119,2,0.2391%,0.02934%,0.12271016311166875,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-324,Otu141,1,0.16065%,0.20629%,1.284095860566449,['BHI + FBS (5%) + Neo normalized']
-325,Otu141,2,0.16065%,0.08846%,0.5506380329909742,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,BHI + FBS (5%) + Neo normalized']"
-326,Otu141,3,0.16065%,0.01362%,0.08478057889822596,"['BHI + FBS (5%) + Neo normalized', 'BHI + FBS (5%) + Neo,Starting sample 2 + NA normalized', 'BHI + FBS (5%) + Neo,Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-327,Otu87,1,0.43463%,0.47911%,1.1023399213123806,['Starting sample 2 + NA normalized']
-328,Otu87,2,0.43463%,0.09596%,0.22078549570899386,"['5% Sheep Blood + Pen Crb Cip normalized', '5% Sheep Blood + Pen Crb Cip,Starting sample 1 + NA normalized']"
-329,Otu87,3,0.43463%,0.03718%,0.08554402595310953,"['5% Sheep Blood + Pen Crb Cip normalized', '5% Sheep Blood + Pen Crb Cip,Starting sample 1 + NA normalized', '5% Sheep Blood + Pen Crb Cip,Starting sample 1 + NA,Starting sample 2 + NA normalized']"
-330,Otu143,1,0.13242%,0.16041%,1.2113729043951065,['Starting sample 1 + NA normalized']
-331,Otu143,2,0.13242%,0.00983%,0.07423349947137894,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-332,Otu153,1,0.12278%,0.13535%,1.1023782374979638,['Starting sample 2 + NA normalized']
-333,Otu153,2,0.12278%,0.0204%,0.16615083889884347,"['Mucus + Amp Kan Ery normalized', 'Mucus + Amp Kan Ery,Starting sample 1 + NA normalized']"
-334,Otu153,3,0.12278%,0.00252%,0.020524515393386546,"['Mucus + Amp Kan Ery normalized', 'Mucus + Amp Kan Ery,Starting sample 2 + NA normalized', 'Mucus + Amp Kan Ery,Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-335,Otu136,1,0.12919%,1.58045%,12.233532007121294,['5% Sheep Blood + Kan normalized']
-336,Otu136,2,0.12919%,0.37433%,2.8975152875609567,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,5% Sheep Blood + Kan normalized']"
-337,Otu136,3,0.12919%,0.03895%,0.30149392367830324,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,5% Sheep Blood + Kan normalized', 'Starting sample 1 + NA,5% Sheep Blood + Kan,Starting sample 2 + NA normalized']"
-338,Otu156,1,0.12232%,0.13483%,1.1022727272727273,['Starting sample 2 + NA normalized']
-339,Otu156,2,0.12232%,0.00705%,0.05763570961412688,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-340,Otu88,1,0.12989%,3.35486%,25.82847024405266,['BHI + FBS (5%) + Neo normalized']
-341,Otu88,2,0.12989%,1.31448%,10.119947648009855,"['Starting sample 1 + NA normalized', 'Starting sample 1 + NA,BHI + FBS (5%) + Neo normalized']"
-342,Otu88,3,0.12989%,0.23194%,1.7856647932866272,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA,BHI (strict anaerobes) + NA normalized']"
-343,Otu165,1,0.10514%,0.12096%,1.1504660452729694,['Starting sample 1 + NA normalized']
-344,Otu165,2,0.10514%,0.00588%,0.0559254327563249,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-345,Otu172,1,0.10599%,0.11683%,1.1022737994150391,['Starting sample 2 + NA normalized']
-346,Otu126,1,0.20752%,0.22876%,1.1023515805705473,['Starting sample 2 + NA normalized']
-347,Otu126,2,0.20752%,0.01988%,0.09579799537393985,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-348,Otu134,1,0.15737%,0.17347%,1.1023066658194065,['Starting sample 2 + NA normalized']
-349,Otu134,2,0.15737%,0.01263%,0.08025671983224249,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-350,Otu167,1,0.10773%,0.12083%,1.1216002970388936,['Starting sample 1 + NA normalized']
-351,Otu167,2,0.10773%,0.00602%,0.05588044184535412,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-352,Otu162,1,0.11032%,0.12271%,1.1123096446700507,['Starting sample 1 + NA normalized']
-353,Otu162,2,0.11032%,0.00626%,0.05674401740391588,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-354,Otu108,1,0.27421%,0.30227%,1.1023303307683892,['Starting sample 2 + NA normalized']
-355,Otu108,2,0.27421%,0.0381%,0.13894460450020057,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
-356,Otu148,1,0.1273%,0.14048%,1.1035349567949724,['Starting sample 1 + NA normalized']
-357,Otu148,2,0.1273%,0.00827%,0.06496465043205027,"['Starting sample 2 + NA normalized', 'Starting sample 2 + NA,Starting sample 1 + NA normalized']"
+OTU,num_growth_conditions,original_abundance,final_abundance,fold_change,conditions
+Otu33,1,0.13981%,16.19071%,115.80509262570632,BHI + FBS (5%) + Pen normalized
+Otu33,2,0.13981%,7.96723%,56.986124025463134,"MiPro + NA,5% Sheep Blood + Amp normalized"
+Otu33,3,0.13981%,2.56547%,18.34968886345755,"MiPro + NA,5% Sheep Blood + Amp,WCA + NA normalized"
+Otu5,1,0.52898%,77.87074%,147.20923286324623,BHI + FBS (5%) + Crb normalized
+Otu5,2,0.52898%,95.77598%,181.05784717758706,"BHI + FBS (5%) + Crb,YCFA + NA normalized"
+Otu5,3,0.52898%,99.7592%,188.58784831184545,"Postgate + Crb,YCFA + NA,BHI + FBS (5%) + Amp normalized"
+Otu12,1,1.24617%,33.70051%,27.043268574913537,R2A - Resistant Starch + NA normalized
+Otu12,2,1.24617%,41.83518%,33.57100556103902,"R2A - Inulin + NA,R2A - Resistant Starch + NA normalized"
+Otu12,3,1.24617%,38.63573%,31.00357896595168,"R2A - Inulin + NA,R2A - Soluble Starch + NA,R2A - Resistant Starch + NA normalized"
+Otu24,1,0.10919%,82.52111%,755.7570290319626,Mucus + Amp normalized
+Otu24,2,0.10919%,99.01877%,906.8483377598682,"5% Sheep Blood + Kan,Mucus + Amp normalized"
+Otu24,3,0.10919%,99.87048%,914.6485941936076,"5% Sheep Blood + Kan,BHI + FBS (5%) + Amp,Mucus + Kan normalized"
+Otu54,1,1.04217%,0.3159%,0.3031175336077607,A II + NA normalized
+Otu54,2,1.04217%,0.03262%,0.03130007580337181,"NCMM - Mucin + NA,A II + NA normalized"
+Otu54,3,1.04217%,0.00024%,0.00023028872448832723,"A II + NA,MT10 + NA,NCMM - Mucin + NA normalized"
+Otu49,1,1.21622%,0.23861%,0.19618983407607174,NCMM - Mucin + NA normalized
+Otu49,2,1.21622%,0.02217%,0.018228609955435692,"mGAM + Ery,MT10 + NA normalized"
+Otu49,3,1.21622%,0.00012%,9.86663597046587e-05,"mGAM + Ery,BMM - Mucin + NA,MT10 + NA normalized"
+Otu1,1,0.32885%,98.31642%,298.97041204196444,mGAM + Van normalized
+Otu1,2,0.32885%,99.99198%,304.0656226242968,"Mucus + Van,M-17 Broth + NA normalized"
+Otu1,3,0.32885%,99.99996%,304.08988900714616,"BHI + Neo,Mucus + Van,Mucus + Neo normalized"
+Otu78,1,0.1904%,6.54882%,34.395063025210085,Postgate + Amp normalized
+Otu78,2,0.1904%,4.94687%,25.98146008403361,"Postgate + Amp,A II + NA normalized"
+Otu78,3,0.1904%,2.92806%,15.37846638655462,"BHI + Pen,A II + NA,Postgate + Amp normalized"
+Otu58,1,0.70718%,1.9071%,2.6967674425181705,WSB + NA normalized
+Otu58,2,0.70718%,0.41703%,0.589708419355751,"mGAM + Van Amp Ery,WSB + NA normalized"
+Otu58,3,0.70718%,0.03127%,0.04421787946491699,"WCA + NA,mGAM + Van Amp Ery,WSB + NA normalized"
+Otu9,1,5.23742%,1.02244%,0.1952182563170416,MT10 + NA normalized
+Otu9,2,5.23742%,0.60849%,0.11618124954653244,"mGAM + Pen Crb Cip,MT10 + NA normalized"
+Otu9,3,5.23742%,0.01046%,0.0019971665438326507,"COR + NA,mGAM + Pen Crb Cip,MT10 + NA normalized"
+Otu15,1,1.81116%,22.56754%,12.460268557167781,mGAM + Kan normalized
+Otu15,2,1.81116%,85.96683%,47.46506658715961,"mGAM + Kan,R2A - Mannitol + NA normalized"
+Otu15,3,1.81116%,98.91062%,54.611751584619796,"WHC + NA,mGAM + Kan,R2A - Soluble Starch + NA normalized"
+Otu66,1,0.74078%,0.18797%,0.25374605145927265,BHI + Amp Kan Ery normalized
+Otu66,2,0.74078%,0.02076%,0.028024514700720864,"mGAM + Pen Crb Cip,MT10 + NA normalized"
+Otu66,3,0.74078%,7e-05%,9.449499176543642e-05,"mGAM + Pen Crb Cip,MT10 + NA,BHI + Amp Kan Ery normalized"
+Otu8,1,5.43696%,1.06102%,0.19514949530620054,MT10 + NA normalized
+Otu8,2,5.43696%,0.67123%,0.123456858244313,"MT10 + NA,mGAM + Van Amp Ery normalized"
+Otu8,3,5.43696%,0.01218%,0.002240222477266708,"COR + NA,MT10 + NA,mGAM + Van Amp Ery normalized"
+Otu25,1,0.18604%,4.96418%,26.683401419049662,AA + NA normalized
+Otu25,2,0.18604%,1.56727%,8.424371102988603,"A II + NA,YCFA + NA normalized"
+Otu25,3,0.18604%,0.33805%,1.8170823478821758,"YCFA + NA,AA + NA,A II + NA normalized"
+Otu63,1,0.73597%,0.16398%,0.2228079948910961,MT10 + NA normalized
+Otu63,2,0.73597%,0.01481%,0.02012310284386592,"BHI + Pen Crb Cip,MT10 + NA normalized"
+Otu63,3,0.73597%,4e-05%,5.43500414419066e-05,"MT10 + NA,BHI + Amp Kan Ery,BHI + Van Amp Ery normalized"
+Otu2,1,0.835%,91.58092%,109.67774850299402,YCFA + Kan normalized
+Otu2,2,0.835%,99.97988%,119.73638323353293,"YCFA + Kan,TGB + NA normalized"
+Otu2,3,0.835%,99.99956%,119.75995209580839,"TGB + NA,YCFA + Kan,Reinforced Clostridial Broth + NA normalized"
+Otu20,1,2.41395%,1.08032%,0.44753205327368006,MT10 + NA normalized
+Otu20,2,2.41395%,0.36782%,0.1523726672052031,"BHI + Pen Crb Cip,MT10 + NA normalized"
+Otu20,3,2.41395%,0.00509%,0.0021085772281944533,"COR + NA,MT10 + NA,BHI + Pen Crb Cip normalized"
+Otu48,1,0.94847%,2.15818%,2.275433065885057,R2A - Resistant Starch + NA normalized
+Otu48,2,0.94847%,0.14704%,0.15502862504876275,"Mucus + Pen Crb Cip,R2A - Resistant Starch + NA normalized"
+Otu48,3,0.94847%,0.01798%,0.018956846289286955,"R2A - Soluble Starch + NA,R2A - Resistant Starch + NA,Mucus + Pen Crb Cip normalized"
+Otu95,1,0.35834%,0.13268%,0.3702628788301613,YCFA + Van Amp Ery normalized
+Otu95,2,0.35834%,0.01081%,0.030166880616174584,"MT10 + NA,YCFA + Pen Crb Cip normalized"
+Otu95,3,0.35834%,2e-05%,5.5812915108556125e-05,"MT10 + NA,YCFA + Van Amp Ery,YCFA + Pen Crb Cip normalized"
+Otu45,1,0.75466%,2.64619%,3.50646648821986,R2A - chondroitin sulfate + NA normalized
+Otu45,2,0.75466%,0.38042%,0.504094559139215,"mGAM + Pen Crb Cip,A II + NA normalized"
+Otu45,3,0.75466%,0.04717%,0.06250496912516895,"R2A - Inulin + NA,WCA + NA,mGAM + Amp normalized"
+Otu50,1,1.17421%,0.31831%,0.2710843886527963,MT10 + NA normalized
+Otu50,2,1.17421%,0.04578%,0.038987915279209,"mGAM + Amp,MT10 + NA normalized"
+Otu50,3,1.17421%,0.00021%,0.00017884364806976607,"COR + NA,MT10 + NA,mGAM + Amp normalized"
+Otu4,1,0.96853%,26.83769%,27.70971472231113,AA + NA normalized
+Otu4,2,0.96853%,47.56564%,49.111168471807794,"A II + NA,YCFA + NA normalized"
+Otu4,3,0.96853%,55.46602%,57.268251886880115,"A II + NA,AA + NA,YCFA + NA normalized"
+Otu11,1,0.14147%,96.22999%,680.2148158620201,BHI + Cip normalized
+Otu11,2,0.14147%,99.86303%,705.8954548667562,"YCFA + Neo,BHI + Cip normalized"
+Otu11,3,0.14147%,99.99634%,706.8377747932424,"BHI + Cip,WCA + NA,mGAM + Kan normalized"
+Otu30,1,0.16712%,4.74239%,28.377154140737197,AA + NA normalized
+Otu30,2,0.16712%,1.55934%,9.330660603159407,"WHC + NA,YCFA + NA normalized"
+Otu30,3,0.16712%,0.28452%,1.702489229296314,"AA + NA,YCFA + NA,A II + NA normalized"
+Otu35,1,1.60643%,0.49193%,0.3062256058465043,MT10 + NA normalized
+Otu35,2,1.60643%,0.05583%,0.03475408203283056,"BHI + Pen Crb Cip,MT10 + NA normalized"
+Otu35,3,1.60643%,0.00038%,0.00023654936723044266,"COR + NA,MT10 + NA,BHI + Pen Crb Cip normalized"
+Otu122,1,0.21064%,0.14014%,0.6653057349031523,YCFA + Pen Crb Cip normalized
+Otu122,2,0.21064%,0.00022%,0.001044436004557539,"YCFA + Pen Crb Cip,YCFA + Van Amp Ery normalized"
+Otu77,1,0.54103%,0.12982%,0.2399497255235384,YCFA + Amp normalized
+Otu77,2,0.54103%,0.00784%,0.014490878509509638,"MiPro + Crb,MT10 + NA normalized"
+Otu77,3,0.54103%,3e-05%,5.544979021496035e-05,"YCFA + Amp,NCMM - Mucin + NA,MT10 + NA normalized"
+Otu99,1,0.35741%,0.30907%,0.8647491676226183,Postgate + Amp Kan Ery normalized
+Otu67,1,0.32687%,70.09165%,214.43280203138863,Postgate + Cip normalized
+Otu67,2,0.32687%,87.11395%,266.50946859607797,"Yeast Casitone + NA,Postgate + Cip normalized"
+Otu67,3,0.32687%,59.82775%,183.03224523510877,"Postgate + Cip,WCA + NA,Yeast Casitone + NA normalized"
+Otu21,1,2.3167%,0.49193%,0.21234082962835066,MT10 + NA normalized
+Otu21,2,2.3167%,0.09799%,0.04229723313333621,"BHI + Pen Crb Cip,MT10 + NA normalized"
+Otu21,3,2.3167%,0.00112%,0.00048344628134846976,"BHI + Pen Crb Cip,COR + NA,MT10 + NA normalized"
+Otu13,1,0.18254%,86.9365%,476.25999780869944,MiPro + Kan normalized
+Otu13,2,0.18254%,99.57135%,545.4768817793359,"MiPro + Kan,BHI + NA normalized"
+Otu13,3,0.18254%,99.98133%,547.7228552645995,"BHI + NA,MiPro + Kan,mGAM + Kan normalized"
+Otu146,1,0.14831%,0.13379%,0.9020969590722135,5% Sheep Blood + Amp Kan Ery normalized
+Otu146,2,0.14831%,0.00023%,0.0015508057447238893,"BHI + Amp Kan Ery,5% Sheep Blood + Amp Kan Ery normalized"
+Otu150,1,0.12942%,0.1259%,0.9728017307989492,BHI + FBS (5%) + Amp Kan Ery normalized
+Otu32,1,1.98657%,0.37594%,0.1892407516473117,BHI + Amp Kan Ery normalized
+Otu32,2,1.98657%,0.08108%,0.040814066456253746,"BHI + Pen Crb Cip,MT10 + NA normalized"
+Otu32,3,1.98657%,0.00077%,0.00038760275248292284,"mGAM + Ery,BMM - Mucin + NA,MT10 + NA normalized"
+Otu38,1,1.51963%,0.51122%,0.33641083684844336,MT10 + NA normalized
+Otu38,2,1.51963%,0.08464%,0.055697768535762,"MiPro + Crb,MT10 + NA normalized"
+Otu38,3,1.51963%,0.00039%,0.0002566414192928542,"COR + NA,MT10 + NA,MiPro + Crb normalized"
+Otu64,1,0.82848%,0.2122%,0.25613171108536115,MT10 + NA normalized
+Otu64,2,0.82848%,0.0334%,0.040314793356508304,"mGAM + Ery,MT10 + NA normalized"
+Otu64,3,0.82848%,0.00011%,0.0001327732715334106,"mGAM + Ery,NCMM - Mucin + NA,MT10 + NA normalized"
+Otu36,1,1.6643%,0.35689%,0.2144385026737968,MT10 + NA normalized
+Otu36,2,1.6643%,0.07649%,0.04595926215225621,"MT10 + NA,mGAM + Van Amp Ery normalized"
+Otu36,3,1.6643%,0.00054%,0.00032446073424262454,"MT10 + NA,YCFA + Amp,mGAM + Van Amp Ery normalized"
+Otu112,1,0.2217%,0.10649%,0.4803337843933243,Mucus + Amp Kan Ery normalized
+Otu6,1,4.95614%,1.74027%,0.35113414875286003,WHC + NA normalized
+Otu6,2,4.95614%,2.42761%,0.48981868954468594,"5% Sheep Blood + Kan,WHC + NA normalized"
+Otu6,3,4.95614%,2.82237%,0.5694693854491599,"WHC + NA,TSB + NA,5% Sheep Blood + Kan normalized"
+Otu31,1,0.84499%,14.51866%,17.18204949170996,5% Sheep Blood + Van normalized
+Otu31,2,0.84499%,5.56775%,6.589131232322276,"MiPro + Ery,5% Sheep Blood + Van normalized"
+Otu31,3,0.84499%,1.42629%,1.6879371353507142,"A II + NA,MiPro + Ery,5% Sheep Blood + Van normalized"
+Otu72,1,0.65103%,0.2122%,0.32594504093513355,MT10 + NA normalized
+Otu72,2,0.65103%,0.01102%,0.016927023332258116,"YCFA + Amp,MT10 + NA normalized"
+Otu72,3,0.65103%,4e-05%,6.144110102453036e-05,"YCFA + Amp,BHI + Amp Kan Ery,MT10 + NA normalized"
+Otu73,1,0.62166%,0.12982%,0.208827976707525,YCFA + Amp normalized
+Otu73,2,0.62166%,0.00961%,0.015458610816201783,"MT10 + NA,YCFA + Pen Crb Cip normalized"
+Otu73,3,0.62166%,3e-05%,4.825789016504199e-05,"MT10 + NA,YCFA + Amp,YCFA + Pen Crb Cip normalized"
+Otu27,1,1.85826%,0.27008%,0.14534026454855617,MT10 + NA normalized
+Otu27,2,1.85826%,0.04331%,0.023306749324637027,"mGAM + Ery,MT10 + NA normalized"
+Otu27,3,1.85826%,0.0003%,0.00016144134835814147,"COR + NA,mGAM + Ery,MT10 + NA normalized"
+Otu96,1,0.3726%,0.10649%,0.2858024691358025,Mucus + Amp Kan Ery normalized
+Otu23,1,1.15296%,62.56357%,54.26343498473494,mGAM + Cip normalized
+Otu23,2,1.15296%,89.7293%,77.82516305856231,"mGAM + Cip,mGAM + Kan normalized"
+Otu23,3,1.15296%,96.31484%,83.5370177629753,"mGAM + Cip,mGAM + Kan,MiPro + NA normalized"
+Otu76,1,0.56661%,0.1259%,0.22219869045728105,BHI + FBS (5%) + Amp Kan Ery normalized
+Otu76,2,0.56661%,0.00023%,0.0004059229452357001,"BHI + Amp Kan Ery,BHI + FBS (5%) + Amp Kan Ery normalized"
+Otu76,3,0.56661%,0.0%,0.0,"BHI + FBS (5%) + Amp Kan Ery,mGAM + Amp Kan Ery,BHI + Amp Kan Ery normalized"
+Otu79,1,0.48281%,0.40737%,0.8437480582423728,WHC + NA normalized
+Otu79,2,0.48281%,0.1332%,0.2758849236759802,"Postgate + Amp,WHC + NA normalized"
+Otu79,3,0.48281%,0.00287%,0.005944367349474949,"Postgate + Amp,WHC + NA,BHI + Amp Kan Ery normalized"
+Otu57,1,0.98751%,0.25079%,0.25396198519508667,MT10 + NA normalized
+Otu57,2,0.98751%,0.03123%,0.0316249962025701,"MT10 + NA,YCFA + Pen Crb Cip normalized"
+Otu57,3,0.98751%,9e-05%,9.113831758665735e-05,"YCFA + Amp,YCFA + Pen Crb Cip,MT10 + NA normalized"
+Otu44,1,1.26536%,0.43406%,0.34303281279635833,MT10 + NA normalized
+Otu44,2,1.26536%,0.05731%,0.04529145855724853,"BHI + Pen Crb Cip,MT10 + NA normalized"
+Otu44,3,1.26536%,0.00023%,0.00018176645381551496,"BHI + Pen Crb Cip,BMM - Mucin + NA,MT10 + NA normalized"
+Otu53,1,1.05542%,0.7737%,0.733073089386216,A II + NA normalized
+Otu53,2,1.05542%,0.30169%,0.2858482878853916,"Mucus + Pen Crb Cip,A II + NA normalized"
+Otu53,3,1.05542%,0.00261%,0.002472949157681302,"MT10 + NA,mGAM + Amp,A II + NA normalized"
+Otu52,1,0.45111%,60.92426%,135.05411097071666,5% Sheep Blood + Ery normalized
+Otu52,2,0.45111%,94.64627%,209.80751923034293,"5% Sheep Blood + Ery,BMM - raffinose + NA normalized"
+Otu52,3,0.45111%,90.07212%,199.6677528762386,"BMM - raffinose + NA,5% Sheep Blood + Kan,5% Sheep Blood + Ery normalized"
+Otu16,1,3.49746%,0.65591%,0.18753895684296604,MT10 + NA normalized
+Otu16,2,3.49746%,0.17857%,0.05105705283262711,"mGAM + Pen Crb Cip,MT10 + NA normalized"
+Otu16,3,3.49746%,0.00182%,0.0005203776454912994,"mGAM + Amp,COR + NA,MT10 + NA normalized"
+Otu101,1,0.19032%,0.65665%,3.4502416981925177,R2A - chondroitin sulfate + NA normalized
+Otu101,2,0.19032%,0.0106%,0.055695670449768815,"R2A - chondroitin sulfate + NA,R2A - Inulin + NA normalized"
+Otu101,3,0.19032%,0.00014%,0.0007356031946195881,"R2A - chondroitin sulfate + NA,R2A - Inulin + NA,WCA + NA normalized"
+Otu62,1,0.89977%,0.30075%,0.33425208664436473,BHI + Amp Kan Ery normalized
+Otu62,2,0.89977%,0.01392%,0.01547062026962446,"BHI + Pen Crb Cip,MT10 + NA normalized"
+Otu62,3,0.89977%,7e-05%,7.779765940184713e-05,"BHI + Amp Kan Ery,MT10 + NA,BHI + Pen Crb Cip normalized"
+Otu139,1,0.12762%,0.23682%,1.855665256229431,A II + NA normalized
+Otu139,2,0.12762%,0.00167%,0.013085723240871336,"MT10 + NA,A II + NA normalized"
+Otu39,1,0.22079%,27.35929%,123.91544001087007,BMM - Inulin + NA normalized
+Otu39,2,0.22079%,81.20982%,367.8147561030844,"mGAM + Kan,BMM - Inulin + NA normalized"
+Otu39,3,0.22079%,96.75929%,438.2412699850537,"BMM - Inulin + NA,5% Sheep Blood + Kan,mGAM + NA normalized"
+Otu43,1,1.61665%,0.42441%,0.2625243559211951,MT10 + NA normalized
+Otu43,2,1.61665%,0.03362%,0.02079609068134723,"YCFA + Ery,MT10 + NA normalized"
+Otu43,3,1.61665%,0.00015%,9.278446169548139e-05,"YCFA + Amp,NCMM - Mucin + NA,MT10 + NA normalized"
+Otu145,1,0.14304%,0.1096%,0.7662192393736018,YCFA + Van Amp Ery normalized
+Otu47,1,0.16816%,37.26537%,221.60662464319694,BMM - Inulin + NA normalized
+Otu47,2,0.16816%,98.85281%,587.849726450999,"YCFA + Kan,BMM - Inulin + NA normalized"
+Otu47,3,0.16816%,99.58446%,592.2006422454805,"BMM - Inulin + NA,YCFA + Kan,YCFA + Neo normalized"
+Otu82,1,0.53422%,0.11575%,0.2166710344053012,MT10 + NA normalized
+Otu46,1,1.1902%,1.03893%,0.8729037136615695,WHC + NA normalized
+Otu46,2,1.1902%,0.1782%,0.14972273567467653,"WHC + NA,YCFA + Van Amp Ery normalized"
+Otu46,3,1.1902%,0.00445%,0.0037388674172408,"A II + NA,WHC + NA,YCFA + Van Amp Ery normalized"
+Otu71,1,0.19003%,6.30995%,33.20502025995895,5% Sheep Blood + Van normalized
+Otu71,2,0.19003%,1.80658%,9.506814713466294,"TGB + NA,5% Sheep Blood + Van normalized"
+Otu71,3,0.19003%,0.24367%,1.2822712203336315,"5% Sheep Blood + Van,R2A - raffinose + NA,TGB + NA normalized"
+Otu60,1,0.89651%,0.26316%,0.2935382762043926,BHI + Amp Kan Ery normalized
+Otu60,2,0.89651%,0.01897%,0.021159830899822644,"MT10 + NA,YCFA + Van Amp Ery normalized"
+Otu60,3,0.89651%,0.0001%,0.00011154365260844832,"BHI + Amp Kan Ery,MT10 + NA,YCFA + Van Amp Ery normalized"
+Otu28,1,1.68465%,0.45335%,0.2691063425637373,MT10 + NA normalized
+Otu28,2,1.68465%,0.00149%,0.0008844567120766925,"COR + NA,MT10 + NA normalized"
+Otu97,1,0.15742%,3.20638%,20.36831406428662,5% Sheep Blood + Van normalized
+Otu97,2,0.15742%,0.48845%,3.102845889975861,"5% Sheep Blood + Ery,WSB + NA normalized"
+Otu97,3,0.15742%,0.07459%,0.473827976114852,"5% Sheep Blood + Van,5% Sheep Blood + Ery,WSB + NA normalized"
+Otu59,1,0.22964%,10.46624%,45.57672879289323,5% Sheep Blood + Van normalized
+Otu59,2,0.22964%,4.15243%,18.08234628113569,"R2A - raffinose + NA,5% Sheep Blood + Van normalized"
+Otu59,3,0.22964%,1.02253%,4.452752133774603,"5% Sheep Blood + Van,R2A - raffinose + NA,TGB + NA normalized"
+Otu100,1,0.24117%,0.64921%,2.6919185636687812,WCA + NA normalized
+Otu100,2,0.24117%,0.02337%,0.09690259982584898,"WCA + NA,WHC + NA normalized"
+Otu100,3,0.24117%,0.00029%,0.0012024712858149853,"WCA + NA,WSB + NA,WHC + NA normalized"
+Otu51,1,0.14441%,27.96253%,193.6329201578838,BMM - raffinose + NA normalized
+Otu51,2,0.14441%,95.58152%,661.8760473651408,"mGAM + Kan,BMM - raffinose + NA normalized"
+Otu51,3,0.14441%,97.54691%,675.4858389308218,"BMM - raffinose + NA,mGAM + NA,mGAM + Kan normalized"
+Otu81,1,0.54205%,0.14421%,0.2660455677520524,YCFA + Van Amp Ery normalized
+Otu81,2,0.54205%,0.00026%,0.0004796605479199335,"BHI + FBS (5%) + Amp Kan Ery,YCFA + Van Amp Ery normalized"
+Otu81,3,0.54205%,0.0%,0.0,"YCFA + Ery,BHI + FBS (5%) + Amp Kan Ery,YCFA + Van Amp Ery normalized"
+Otu163,1,0.11612%,0.12644%,1.0888735790561488,Mucus + Pen Crb Cip normalized
+Otu110,1,0.26295%,0.21297%,0.8099258414147176,Mucus + Amp Kan Ery normalized
+Otu110,2,0.26295%,0.00039%,0.0014831717056474614,"Mucus + Amp Kan Ery,YCFA + Van Amp Ery normalized"
+Otu22,1,1.26611%,21.51045%,16.98940060500272,5% Sheep Blood + Kan normalized
+Otu22,2,1.26611%,57.91931%,45.74587516092598,"BMM - raffinose + NA,5% Sheep Blood + Kan normalized"
+Otu22,3,1.26611%,98.17835%,77.54330192479325,"5% Sheep Blood + Kan,WCA + NA,BMM - raffinose + NA normalized"
+Otu164,1,0.1305%,0.15973%,1.223984674329502,Mucus + Amp Kan Ery normalized
+Otu68,1,0.67845%,0.17362%,0.25590684648831896,MT10 + NA normalized
+Otu68,2,0.67845%,0.01423%,0.02097427960792984,"YCFA + Van Amp Ery,MT10 + NA normalized"
+Otu68,3,0.67845%,4e-05%,5.8957918785466875e-05,"mGAM + Amp Kan Ery,MT10 + NA,YCFA + Van Amp Ery normalized"
+Otu80,1,0.31045%,6.41065%,20.6495409888871,WHC + NA normalized
+Otu80,2,0.31045%,11.85227%,38.17770977613142,"WHC + NA,Postgate + Kan normalized"
+Otu80,3,0.31045%,1.36164%,4.386020293122886,"Postgate + Kan,WHC + NA,Postgate + Amp normalized"
+Otu7,1,5.51233%,1.3311%,0.24147683465975364,MT10 + NA normalized
+Otu7,2,5.51233%,0.33717%,0.06116651216454748,"MT10 + NA,YCFA + Van Amp Ery normalized"
+Otu7,3,5.51233%,0.00425%,0.0007709988335241177,"COR + NA,MT10 + NA,YCFA + Van Amp Ery normalized"
+Otu34,1,1.74784%,0.48228%,0.275929146832662,MT10 + NA normalized
+Otu34,2,1.74784%,0.06419%,0.03672532954961552,"YCFA + Ery,MT10 + NA normalized"
+Otu34,3,1.74784%,0.00045%,0.0002574606371292567,"YCFA + Ery,MT10 + NA,COR + NA normalized"
+Otu70,1,0.14977%,10.44424%,69.73519396407826,WHC + NA normalized
+Otu70,2,0.14977%,27.23705%,181.85918408225947,"WHC + NA,Postgate + Kan normalized"
+Otu70,3,0.14977%,14.14156%,94.42184683180878,"PYG + NA,Postgate + Kan,WHC + NA normalized"
+Otu102,1,0.36818%,0.12846%,0.34890542669346514,mGAM + Amp Kan Ery normalized
+Otu93,1,0.41152%,0.22497%,0.5466805987558321,YCFA + Van Amp Ery normalized
+Otu93,2,0.41152%,0.00096%,0.0023328149300155523,"YCFA + Van Amp Ery,BMM - Mucin + NA normalized"
+Otu93,3,0.41152%,0.0%,0.0,"BMM - Mucin + NA,mGAM + Amp Kan Ery,YCFA + Van Amp Ery normalized"
+Otu130,1,0.19972%,0.17882%,0.89535349489285,YCFA + Van Amp Ery normalized
+Otu120,1,0.2364%,0.23856%,1.0091370558375634,mGAM + Amp Kan Ery normalized
+Otu83,1,0.44907%,0.16398%,0.3651546529494288,MT10 + NA normalized
+Otu159,1,0.12217%,0.20068%,1.6426291233527053,5% Sheep Blood + Amp Kan Ery normalized
+Otu159,2,0.12217%,0.00029%,0.002373741507735123,"YCFA + Pen Crb Cip,5% Sheep Blood + Amp Kan Ery normalized"
+Otu141,1,0.16065%,0.20629%,1.284095860566449,BHI + FBS (5%) + Neo normalized
+Otu87,1,0.43463%,0.1508%,0.3469617835860387,5% Sheep Blood + Pen Crb Cip normalized
+Otu87,2,0.43463%,0.00021%,0.00048316959252697695,"YCFA + Pen Crb Cip,5% Sheep Blood + Pen Crb Cip normalized"
+Otu87,3,0.43463%,0.0%,0.0,"5% Sheep Blood + Pen Crb Cip,YCFA + Van Amp Ery,YCFA + Pen Crb Cip normalized"
+Otu153,1,0.12278%,0.10649%,0.8673236683498942,Mucus + Amp Kan Ery normalized
+Otu136,1,0.12919%,1.58045%,12.233532007121294,5% Sheep Blood + Kan normalized
+Otu136,2,0.12919%,0.09796%,0.7582630234538278,"5% Sheep Blood + Kan,Postgate + Neo normalized"
+Otu88,1,0.12989%,3.35486%,25.82847024405266,BHI + FBS (5%) + Neo normalized
+Otu88,2,0.12989%,0.15451%,1.1895449996150589,"BHI + FBS (5%) + Neo,A II + NA normalized"
+Otu88,3,0.12989%,0.00492%,0.03787820463469089,"A II + NA,BHI + FBS (5%) + Neo,BHI (strict anaerobes) + NA normalized"

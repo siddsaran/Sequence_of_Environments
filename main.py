@@ -95,7 +95,7 @@ def main():
                 'original_abundance': str(original) + "%",
                 'final_abundance': str(abd) + "%",
                 'fold_change': factor,
-                'conditions': normalized_cols
+                'conditions': normalized_cols[-1]
             }
             print(f"Adding {bacteria} with {num_sequence} growth conditions, {(num_done/137) * 100:.3f}% done!")
             main_data.loc[len(main_data) - 2] = new_row
