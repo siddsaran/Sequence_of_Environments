@@ -1,6 +1,7 @@
 import pandas as pd
 from matplotlib import pyplot as plt
 import numpy as np
+import main
 
 MASTER_DATA = pd.read_csv('allChanges.csv')
 
@@ -63,5 +64,7 @@ def plot_log10_histograms_subplots(save_prefix="fold_enrichment_log10"):
 
 def main():
     plot_log10_histograms_subplots()
+
+
 if __name__ == "__main__":
     main()
