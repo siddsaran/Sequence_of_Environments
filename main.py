@@ -2,9 +2,9 @@ import pandas as pd
 from itertools import permutations
 
 TAX = pd.read_csv("Datasets/tax.csv")
-CULTURE = pd.read_csv("Datasets/cultureProportions_Human.csv")
+CULTURE = pd.read_csv("Datasets/cultureProportions_Human_avg.csv")
 MICROBIOME = pd.read_csv("Datasets/microbiomeProportions_Human.csv")
-LIMIT = 0.001
+LIMIT = .01
 
 def find_cols_to_keep(culture, bacteria):
     cols_to_keep = []
@@ -101,7 +101,7 @@ def main():
             main_data.loc[len(main_data) - 2] = new_row
         num_done += 1
 
-    main_data.to_csv('allChanges.csv')
+    main_data.to_csv('allChanges_inputscaled.csv')
     # bacteria = input("Type a bacteria: ")
     # num_sequences = int(input("Type the number of environments you want to grow: "))
     # df = find_n_sequences(bacteria, num_sequences)

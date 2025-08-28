@@ -1,0 +1,319 @@
+,OTU,num_growth_conditions,original_abundance,final_abundance,fold_change,conditions
+-2,Otu33,1,0.13981%,92.097%,658.7297045990988,BHI + FBS (5%) + Crb normalized
+-1,Otu33,2,0.13981%,99.83322%,714.0635147700451,"BHI + FBS (5%) + Crb,BHI + FBS (5%) + Amp normalized"
+0,Otu33,3,0.13981%,99.99281%,715.2049924898076,"BHI + FBS (5%) + Amp,BHI + FBS (5%) + Crb,YCFA normalized"
+1,Otu5,1,0.52898%,0.6001%,1.1344474271238987,BHI + FBS (5%) + Crb normalized
+2,Otu5,2,0.52898%,0.00555%,0.010491890052553972,"BHI + FBS (5%) + Crb,BHI + FBS (5%) normalized"
+3,Otu5,3,0.52898%,4e-05%,7.561722560399259e-05,"BHI + FBS (5%) + Crb,YCFA,BHI + FBS (5%) normalized"
+4,Otu12,1,1.24617%,21.98614%,17.64297006026465,R2A - Resistant Starch normalized
+5,Otu12,2,1.24617%,27.95187%,22.430222200823323,"R2A - Soluble Starch,R2A - Resistant Starch normalized"
+6,Otu12,3,1.24617%,35.71773%,28.662004381424687,"R2A - Azo-Galactomannon,R2A - Resistant Starch,R2A - Mannitol normalized"
+7,Otu24,1,0.10919%,95.73945%,876.815184540709,Mucus + Amp normalized
+8,Otu24,2,0.10919%,99.92658%,915.1623775070977,"Mucus + Kan,BHI + FBS (5%) + Amp normalized"
+9,Otu24,3,0.10919%,99.99846%,915.8206795494093,"BHI + FBS (5%) + Amp,Mucus + Amp,Mucus + Kan normalized"
+10,Otu54,1,1.04217%,0.00793%,0.0076091232716351456,Starting sample 1 normalized
+11,Otu54,2,1.04217%,8e-05%,7.676290816277576e-05,"Starting sample 1,Starting sample 2 normalized"
+12,Otu49,1,1.21622%,0.00861%,0.007079311308809261,Starting sample 1 normalized
+13,Otu49,2,1.21622%,0.0001%,8.222196642054892e-05,"Starting sample 1,Starting sample 2 normalized"
+14,Otu1,1,0.32885%,21.84496%,66.42834118899195,BMM - glucose normalized
+15,Otu1,2,0.32885%,26.67755%,81.12376463433176,"BMM - glucose,Mucus + Neo normalized"
+16,Otu1,3,0.32885%,19.91662%,60.56445187775583,"BMM - glucose,Mucus + Neo,R2A - Mannitol normalized"
+17,Otu78,1,0.1904%,0.02197%,0.11538865546218487,Postgate + Amp normalized
+18,Otu78,2,0.1904%,4e-05%,0.0002100840336134454,"Postgate + Amp,BHI + Pen normalized"
+19,Otu78,3,0.1904%,0.0%,0.0,"BHI + Pen,A II,Postgate + Amp normalized"
+20,Otu58,1,0.70718%,0.0069%,0.009757063265363838,WSB normalized
+21,Otu9,1,5.23742%,0.03838%,0.007328035559493032,Starting sample 1 normalized
+22,Otu9,2,5.23742%,0.00198%,0.00037804873391860874,"Starting sample 1,Starting sample 2 normalized"
+23,Otu15,1,1.81116%,14.5157%,8.014587336292763,R2A - Mannitol normalized
+24,Otu15,2,1.81116%,18.06976%,9.976898783100332,"Starting sample 1,R2A - Mannitol normalized"
+25,Otu15,3,1.81116%,29.97496%,16.55014465867179,"Postgate + Amp,R2A - Mannitol,R2A - Soluble Starch normalized"
+26,Otu128,1,0.20921%,0.73266%,3.5020314516514506,Starting sample 2 normalized
+27,Otu128,2,0.20921%,0.72325%,3.4570527221452125,"Starting sample 1,Starting sample 2 normalized"
+28,Otu128,3,0.20921%,0.23231%,1.1104153721141437,"MT10,Starting sample 1,Starting sample 2 normalized"
+29,Otu8,1,5.43696%,0.0395%,0.007265089314616992,Starting sample 1 normalized
+30,Otu8,2,5.43696%,0.00212%,0.00038992378093640563,"Starting sample 1,Starting sample 2 normalized"
+31,Otu25,1,0.18604%,12.7826%,68.70887981079338,AA normalized
+32,Otu25,2,0.18604%,30.35207%,163.14808643302516,"WHC,BMM - Mucin normalized"
+33,Otu25,3,0.18604%,35.03325%,188.31030961083638,"WHC,BMM - Mucin,AA normalized"
+34,Otu2,1,0.835%,82.50193%,98.80470658682636,TGB normalized
+35,Otu2,2,0.835%,99.50693%,119.1699760479042,"Reinforced Clostridial Broth,YCFA + Kan normalized"
+36,Otu2,3,0.835%,99.99521%,119.75474251497006,"PYG,YCFA + Kan,TGB normalized"
+37,Otu20,1,2.41395%,0.71848%,0.2976366536175149,Starting sample 1 normalized
+38,Otu20,2,2.41395%,0.7245%,0.3001304915180514,"Starting sample 1,Starting sample 2 normalized"
+39,Otu20,3,2.41395%,0.36753%,0.1522525321568384,"MT10,Starting sample 1,Starting sample 2 normalized"
+40,Otu48,1,0.94847%,0.01861%,0.019621073940135167,R2A - Resistant Starch normalized
+41,Otu48,2,0.94847%,0.00023%,0.00024249580903982202,"R2A - Resistant Starch,Starting sample 1 normalized"
+42,Otu142,1,0.147%,0.72657%,4.94265306122449,Starting sample 1 normalized
+43,Otu142,2,0.147%,0.72477%,4.930408163265307,"Starting sample 1,Starting sample 2 normalized"
+44,Otu142,3,0.147%,0.25138%,1.7100680272108844,"Mucus + Amp Kan Ery,Starting sample 2,Starting sample 1 normalized"
+45,Otu45,1,0.75466%,0.06089%,0.08068534174330162,R2A - Mannitol normalized
+46,Otu45,2,0.75466%,0.00034%,0.00045053401531815657,"R2A - Mannitol,R2A - Azo-Galactomannon normalized"
+47,Otu45,3,0.75466%,0.0%,0.0,"BHI + FBS (5%) + Neo,R2A - Azo-Galactomannon,R2A - Mannitol normalized"
+48,Otu50,1,1.17421%,0.00836%,0.007119680466015448,Starting sample 1 normalized
+49,Otu50,2,1.17421%,0.0001%,8.516364193798385e-05,"Starting sample 1,Starting sample 2 normalized"
+50,Otu103,1,0.31362%,0.72027%,2.296632867801798,Starting sample 2 normalized
+51,Otu103,2,0.31362%,0.72423%,2.3092596135450547,"Starting sample 2,Starting sample 1 normalized"
+52,Otu103,3,0.31362%,0.20341%,0.6485874625342771,"Starting sample 2,MT10,Starting sample 1 normalized"
+53,Otu4,1,0.96853%,13.25006%,13.680588107750921,AA normalized
+54,Otu4,2,0.96853%,25.99728%,26.841997666566858,"WHC,R2A - Inulin normalized"
+55,Otu4,3,0.96853%,31.57989%,32.60600084664388,"Mucus + Amp Kan Ery,TSB,WHC normalized"
+56,Otu11,1,0.14147%,98.99002%,699.7244645507881,BHI + Cip normalized
+57,Otu11,2,0.14147%,99.97461%,706.6841733229659,"WCA,BHI + Cip normalized"
+58,Otu11,3,0.14147%,99.99955%,706.860465116279,"MRS,WCA,BHI + Cip normalized"
+59,Otu30,1,0.16712%,13.56491%,81.16868118717089,AA normalized
+60,Otu30,2,0.16712%,29.78227%,178.2088918142652,"WHC,R2A - Inulin normalized"
+61,Otu30,3,0.16712%,35.63237%,213.21427716610822,"AA,WHC,R2A - Inulin normalized"
+62,Otu35,1,1.60643%,0.78372%,0.4878643949627435,Starting sample 1 normalized
+63,Otu35,2,1.60643%,0.72163%,0.4492134733539588,"Starting sample 1,Starting sample 2 normalized"
+64,Otu35,3,1.60643%,0.22873%,0.14238404412268196,"Starting sample 1,Starting sample 2,MT10 normalized"
+65,Otu122,1,0.21064%,0.73525%,3.4905526015951387,Starting sample 1 normalized
+66,Otu122,2,0.21064%,0.72486%,3.4412267375617165,"Starting sample 1,Starting sample 2 normalized"
+67,Otu122,3,0.21064%,0.46069%,2.18709646790733,"Starting sample 1,Starting sample 2,YCFA + Pen Crb Cip normalized"
+68,Otu155,1,0.11955%,0.72277%,6.045754914261815,Starting sample 1 normalized
+69,Otu155,2,0.11955%,0.72466%,6.061564199079882,"Starting sample 1,Starting sample 2 normalized"
+70,Otu155,3,0.11955%,0.39741%,3.324215809284818,"BHI + Amp Kan Ery,Starting sample 2,Starting sample 1 normalized"
+71,Otu67,1,0.32687%,0.44368%,1.3573591947869184,Postgate + Cip normalized
+72,Otu67,2,0.32687%,0.00301%,0.009208553859332457,"Postgate + Cip,Yeast Casitone normalized"
+73,Otu67,3,0.32687%,1e-05%,3.059320219047328e-05,"Postgate + Cip,Yeast Casitone,BHI + Van Amp Ery normalized"
+74,Otu21,1,2.3167%,0.72189%,0.3116027107523633,Starting sample 1 normalized
+75,Otu21,2,2.3167%,0.72463%,0.3127854275478051,"Starting sample 1,Starting sample 2 normalized"
+76,Otu21,3,2.3167%,0.17362%,0.07494280657832261,"Starting sample 2,Starting sample 1,MT10 normalized"
+77,Otu13,1,0.18254%,46.31403%,253.71989700887477,BHI normalized
+78,Otu13,2,0.18254%,99.4302%,544.7036266023885,"BHI,Postgate + Amp normalized"
+79,Otu13,3,0.18254%,99.95422%,547.5743398707133,"mGAM + Kan,Postgate + Amp,PYG normalized"
+80,Otu168,1,0.10619%,0.73362%,6.908560128072323,Starting sample 1 normalized
+81,Otu168,2,0.10619%,0.72485%,6.825972313777191,"Starting sample 1,Starting sample 2 normalized"
+82,Otu168,3,0.10619%,0.34473%,3.2463508804972214,"Starting sample 1,Starting sample 2,Mucus + Amp Kan Ery normalized"
+83,Otu146,1,0.14831%,0.76122%,5.1326276043422565,Starting sample 2 normalized
+84,Otu146,2,0.14831%,0.71927%,4.849774121771964,"Starting sample 1,Starting sample 2 normalized"
+85,Otu146,3,0.14831%,0.51051%,3.44218191625649,"BHI + Amp Kan Ery,Starting sample 2,Starting sample 1 normalized"
+86,Otu150,1,0.12942%,0.72078%,5.569309225776541,Starting sample 2 normalized
+87,Otu150,2,0.12942%,0.7242%,5.595734816875289,"Starting sample 1,Starting sample 2 normalized"
+88,Otu150,3,0.12942%,0.58641%,4.531061659712563,"BHI + FBS (5%) + Amp Kan Ery,Starting sample 1,Starting sample 2 normalized"
+89,Otu118,1,0.21931%,0.74965%,3.418220783366012,Starting sample 1 normalized
+90,Otu118,2,0.21931%,0.72456%,3.3038165154347725,"Starting sample 1,Starting sample 2 normalized"
+91,Otu118,3,0.21931%,0.20309%,0.926040764215038,"mGAM + Crb,Starting sample 1,Starting sample 2 normalized"
+92,Otu32,1,1.98657%,0.75971%,0.3824229702451965,Starting sample 2 normalized
+93,Otu32,2,1.98657%,0.71954%,0.3622021876903406,"Starting sample 1,Starting sample 2 normalized"
+94,Otu32,3,1.98657%,0.15984%,0.08046029085307843,"MT10,Starting sample 2,Starting sample 1 normalized"
+95,Otu123,1,0.24798%,0.7523%,3.0337123961609804,Starting sample 1 normalized
+96,Otu123,2,0.24798%,0.72444%,2.9213646261795305,"Starting sample 1,Starting sample 2 normalized"
+97,Otu123,3,0.24798%,0.27453%,1.1070650858940236,"Starting sample 2,Starting sample 1,MT10 normalized"
+98,Otu38,1,1.51963%,0.73371%,0.48282147628041033,Starting sample 1 normalized
+99,Otu38,2,1.51963%,0.72485%,0.4769911096780137,"Starting sample 1,Starting sample 2 normalized"
+100,Otu38,3,1.51963%,0.27081%,0.17820785322743035,"MT10,Starting sample 1,Starting sample 2 normalized"
+101,Otu36,1,1.6643%,0.72997%,0.43860481884275676,Starting sample 2 normalized
+102,Otu36,2,1.6643%,0.72351%,0.43472330709607643,"Starting sample 1,Starting sample 2 normalized"
+103,Otu36,3,1.6643%,0.17948%,0.10784113441086343,"MT10,Starting sample 2,Starting sample 1 normalized"
+104,Otu140,1,0.14526%,0.74129%,5.103194272339254,Starting sample 1 normalized
+105,Otu140,2,0.14526%,0.7248%,4.9896736885584465,"Starting sample 1,Starting sample 2 normalized"
+106,Otu140,3,0.14526%,0.18354%,1.2635274679884345,"Starting sample 1,Starting sample 2,YCFA + Pen normalized"
+107,Otu112,1,0.2217%,0.78519%,3.5416779431664414,Starting sample 1 normalized
+108,Otu112,2,0.2217%,0.72144%,3.254127198917456,"Starting sample 1,Starting sample 2 normalized"
+109,Otu112,3,0.2217%,0.30565%,1.3786648624267026,"Mucus + Amp Kan Ery,Starting sample 2,Starting sample 1 normalized"
+110,Otu6,1,4.95614%,0.0442%,0.00891823071987474,Starting sample 1 normalized
+111,Otu6,2,4.95614%,0.00216%,0.000435823039704286,"Starting sample 1,Starting sample 2 normalized"
+112,Otu6,3,4.95614%,3e-05%,6.053097773670638e-06,"Starting sample 2,WHC,Starting sample 1 normalized"
+113,Otu31,1,0.84499%,5.94208%,7.032130557758079,BHI + FBS (5%) + Van normalized
+114,Otu31,2,0.84499%,49.18968%,58.21332796837832,"BHI + FBS (5%) + Van,TSB normalized"
+115,Otu31,3,0.84499%,54.41757%,64.400253257435,"BHI + FBS (5%) + Van,Starting sample 1,TSB normalized"
+116,Otu27,1,1.85826%,0.73753%,0.39689279218193363,Starting sample 1 normalized
+117,Otu27,2,1.85826%,0.72485%,0.39006920452466287,"Starting sample 1,Starting sample 2 normalized"
+118,Otu27,3,1.85826%,0.11639%,0.06263386178468029,"MT10,Starting sample 1,Starting sample 2 normalized"
+119,Otu23,1,1.15296%,47.6322%,41.31296835970025,mGAM + Cip normalized
+120,Otu23,2,1.15296%,53.0761%,46.03464127116292,"Starting sample 1,mGAM + Cip normalized"
+121,Otu23,3,1.15296%,48.44371%,42.016817582570084,"mGAM + Cip,mGAM + Kan,Starting sample 1 normalized"
+122,Otu170,1,0.1006%,0.74006%,7.356461232604374,Starting sample 1 normalized
+123,Otu170,2,0.1006%,0.72482%,7.204970178926442,"Starting sample 1,Starting sample 2 normalized"
+124,Otu170,3,0.1006%,0.36067%,3.585188866799205,"Starting sample 1,Starting sample 2,Mucus + Amp Kan Ery normalized"
+125,Otu115,1,0.23573%,0.73232%,3.1066050142111736,Starting sample 1 normalized
+126,Otu115,2,0.23573%,0.72485%,3.0749162177066984,"Starting sample 1,Starting sample 2 normalized"
+127,Otu115,3,0.23573%,0.19801%,0.8399864251474144,"MT10,Starting sample 1,Starting sample 2 normalized"
+128,Otu114,1,0.24155%,0.73913%,3.0599461809149244,Starting sample 1 normalized
+129,Otu114,2,0.24155%,0.72483%,3.0007451873318156,"Starting sample 1,Starting sample 2 normalized"
+130,Otu114,3,0.24155%,0.19144%,0.7925481266818465,"MT10,Starting sample 2,Starting sample 1 normalized"
+131,Otu116,1,0.23244%,0.7284%,3.1337119256582344,Starting sample 1 normalized
+132,Otu116,2,0.23244%,0.7248%,3.118224057821373,"Starting sample 1,Starting sample 2 normalized"
+133,Otu116,3,0.23244%,0.26193%,1.126871450696954,"BMM - chondroitin sulfate,Starting sample 1,Starting sample 2 normalized"
+134,Otu107,1,0.29182%,0.73353%,2.513638544308135,Starting sample 2 normalized
+135,Otu107,2,0.29182%,0.72317%,2.4781372078678636,"Starting sample 1,Starting sample 2 normalized"
+136,Otu107,3,0.29182%,0.30566%,1.047426495785073,"Starting sample 2,Starting sample 1,MT10 normalized"
+137,Otu160,1,0.11801%,0.73334%,6.214219133971697,Starting sample 1 normalized
+138,Otu160,2,0.11801%,0.72485%,6.142276078298449,"Starting sample 1,Starting sample 2 normalized"
+139,Otu160,3,0.11801%,0.52664%,4.462672654859757,"Starting sample 2,MT10,Starting sample 1 normalized"
+140,Otu133,1,0.17009%,0.73562%,4.32488682462226,Starting sample 2 normalized
+141,Otu133,2,0.17009%,0.72295%,4.250396848727145,"Starting sample 1,Starting sample 2 normalized"
+142,Otu133,3,0.17009%,0.27909%,1.6408372038332648,"BMM - chondroitin sulfate,Starting sample 2,Starting sample 1 normalized"
+143,Otu44,1,1.26536%,0.00914%,0.0072232408168426375,Starting sample 1 normalized
+144,Otu44,2,1.26536%,0.00011%,8.693178225959411e-05,"Starting sample 1,Starting sample 2 normalized"
+145,Otu53,1,1.05542%,0.00759%,0.0071914498493490745,Starting sample 1 normalized
+146,Otu53,2,1.05542%,8e-05%,7.579920789827746e-05,"Starting sample 1,Starting sample 2 normalized"
+147,Otu52,1,0.45111%,0.37462%,0.8304404690651948,BMM - raffinose normalized
+148,Otu52,2,0.45111%,0.00166%,0.0036798120192414268,"YCFA + Cip,BMM - raffinose normalized"
+149,Otu52,3,0.45111%,1e-05%,2.2167542284586908e-05,"5% Sheep Blood + Ery,YCFA + Cip,BMM - raffinose normalized"
+150,Otu105,1,0.28978%,0.71959%,2.4832286562219616,Starting sample 1 normalized
+151,Otu105,2,0.28978%,0.72455%,2.500345089378149,"Starting sample 1,Starting sample 2 normalized"
+152,Otu105,3,0.28978%,0.30027%,1.036199875767824,"Starting sample 2,Starting sample 1,MT10 normalized"
+153,Otu16,1,3.49746%,0.72669%,0.2077765006604793,Starting sample 1 normalized
+154,Otu16,2,3.49746%,0.72477%,0.20722753083666434,"Starting sample 1,Starting sample 2 normalized"
+155,Otu16,3,3.49746%,0.15239%,0.04357162054748303,"Starting sample 2,MT10,Starting sample 1 normalized"
+156,Otu171,1,0.10002%,0.73759%,7.374425114977004,Starting sample 1 normalized
+157,Otu171,2,0.10002%,0.72484%,7.2469506098780245,"Starting sample 1,Starting sample 2 normalized"
+158,Otu171,3,0.10002%,0.38394%,3.838632273545291,"mGAM + Van Amp Ery,Starting sample 2,Starting sample 1 normalized"
+159,Otu101,1,0.19032%,8.24735%,43.33412147961329,R2A - Mannitol normalized
+160,Otu101,2,0.19032%,9.18075%,48.238493064312735,"R2A - Mannitol,Starting sample 1 normalized"
+161,Otu101,3,0.19032%,8.87314%,46.622215216477514,"R2A - Mannitol,Starting sample 2,Starting sample 1 normalized"
+162,Otu121,1,0.20409%,0.75776%,3.7128717722573374,Starting sample 1 normalized
+163,Otu121,2,0.20409%,0.72414%,3.5481405262384245,"Starting sample 1,Starting sample 2 normalized"
+164,Otu121,3,0.20409%,0.28081%,1.375912587583909,"NCMM - Mucin,Starting sample 2,Starting sample 1 normalized"
+165,Otu139,1,0.12762%,0.78258%,6.132110954395863,A II normalized
+166,Otu139,2,0.12762%,0.89613%,7.021861777150916,"A II,Starting sample 1 normalized"
+167,Otu139,3,0.12762%,0.83545%,6.546387713524526,"A II,Starting sample 1,Starting sample 2 normalized"
+168,Otu39,1,0.22079%,94.45097%,427.7864486616242,BMM - Inulin normalized
+169,Otu39,2,0.22079%,98.22159%,444.8643054486164,"BMM - Inulin,mGAM normalized"
+170,Otu39,3,0.22079%,99.69968%,451.5588568322841,"BMM - Fructose,BMM - Inulin,mGAM normalized"
+171,Otu43,1,1.61665%,0.01173%,0.007255744904586646,Starting sample 1 normalized
+172,Otu43,2,1.61665%,0.00019%,0.00011752698481427645,"Starting sample 1,Starting sample 2 normalized"
+173,Otu137,1,0.15533%,0.73366%,4.723234404171763,Starting sample 2 normalized
+174,Otu137,2,0.15533%,0.72316%,4.655636387046933,"Starting sample 1,Starting sample 2 normalized"
+175,Otu137,3,0.15533%,0.1654%,1.0648297173759094,"BHI + Pen,Starting sample 1,Starting sample 2 normalized"
+176,Otu145,1,0.14304%,0.71878%,5.025027964205816,Starting sample 2 normalized
+177,Otu145,2,0.14304%,0.72432%,5.063758389261745,"Starting sample 1,Starting sample 2 normalized"
+178,Otu145,3,0.14304%,0.53677%,3.752586689038031,"Starting sample 1,Starting sample 2,YCFA + Van Amp Ery normalized"
+179,Otu132,1,0.16406%,0.73354%,4.471169084481287,Starting sample 1 normalized
+180,Otu132,2,0.16406%,0.72485%,4.418200658295745,"Starting sample 2,Starting sample 1 normalized"
+181,Otu132,3,0.16406%,0.36856%,2.2464951846885284,"BMM - chondroitin sulfate,Starting sample 2,Starting sample 1 normalized"
+182,Otu47,1,0.16816%,0.29023%,1.725915794481446,BMM - Inulin normalized
+183,Otu47,2,0.16816%,0.07197%,0.4279852521408183,"BMM - Inulin,YCFA + Kan normalized"
+184,Otu47,3,0.16816%,0.00036%,0.0021408182683158895,"BMM - Inulin,YCFA + Kan,YCFA + Neo normalized"
+185,Otu46,1,1.1902%,0.00881%,0.0074021172912115615,Starting sample 1 normalized
+186,Otu46,2,1.1902%,0.0001%,8.401949252226517e-05,"Starting sample 1,Starting sample 2 normalized"
+187,Otu127,1,0.20158%,0.71755%,3.5596289314416114,Starting sample 1 normalized
+188,Otu127,2,0.20158%,0.72446%,3.593908125806131,"Starting sample 2,Starting sample 1 normalized"
+189,Otu127,3,0.20158%,0.27959%,1.3869927572179779,"Mucus + Van Amp Ery,Starting sample 2,Starting sample 1 normalized"
+190,Otu71,1,0.19003%,0.12334%,0.6490554123033205,Mucus + Van normalized
+191,Otu71,2,0.19003%,0.04226%,0.22238593906225332,"TGB,Mucus + Van normalized"
+192,Otu71,3,0.19003%,4e-05%,0.0002104930800399937,"R2A - raffinose,TGB,Mucus + Van normalized"
+193,Otu28,1,1.68465%,0.78255%,0.46451785237289644,Starting sample 1 normalized
+194,Otu28,2,1.68465%,0.72179%,0.4284510135636483,"Starting sample 1,Starting sample 2 normalized"
+195,Otu28,3,1.68465%,0.20139%,0.1195441189564598,"Starting sample 2,MT10,Starting sample 1 normalized"
+196,Otu97,1,0.15742%,0.00366%,0.02324990471350527,5% Sheep Blood + Van normalized
+197,Otu59,1,0.22964%,0.17847%,0.7771729663821633,Mucus + Van normalized
+198,Otu59,2,0.22964%,0.08277%,0.36043372234802296,"Mucus + Van,TGB normalized"
+199,Otu59,3,0.22964%,0.00016%,0.0006967427277477791,"TGB,R2A - raffinose,Mucus + Van normalized"
+200,Otu131,1,0.17728%,0.73192%,4.128610108303249,Starting sample 2 normalized
+201,Otu131,2,0.17728%,0.72333%,4.080155685920578,"Starting sample 1,Starting sample 2 normalized"
+202,Otu131,3,0.17728%,0.22826%,1.287567689530686,"MT10,Starting sample 1,Starting sample 2 normalized"
+203,Otu154,1,0.12159%,0.71984%,5.920223702607123,Starting sample 1 normalized
+204,Otu154,2,0.12159%,0.72456%,5.959042684431285,"Starting sample 1,Starting sample 2 normalized"
+205,Otu154,3,0.12159%,0.39307%,3.2327494037338593,"YCFA + Ery,Starting sample 2,Starting sample 1 normalized"
+206,Otu117,1,0.2398%,0.72211%,3.011301084236864,Starting sample 2 normalized
+207,Otu117,2,0.2398%,0.72412%,3.0196830692243535,"Starting sample 1,Starting sample 2 normalized"
+208,Otu117,3,0.2398%,0.19999%,0.8339866555462885,"MT10,Starting sample 1,Starting sample 2 normalized"
+209,Otu100,1,0.24117%,1.53889%,6.380934610440768,Mucus normalized
+210,Otu100,2,0.24117%,1.81598%,7.529875191773438,"Mucus,Starting sample 1 normalized"
+211,Otu100,3,0.24117%,1.6002%,6.635153626072895,"Mucus,Starting sample 1,Starting sample 2 normalized"
+212,Otu51,1,0.14441%,0.53539%,3.7074302333633407,BMM - raffinose normalized
+213,Otu51,2,0.14441%,0.00407%,0.028183643791981162,"Postgate + Kan,BMM - raffinose normalized"
+214,Otu51,3,0.14441%,1e-05%,6.924728204417977e-05,"BHI (strict anaerobes),BMM - raffinose,Postgate + Kan normalized"
+215,Otu163,1,0.11612%,0.79552%,6.850843954529797,Mucus + Pen Crb Cip normalized
+216,Otu163,2,0.11612%,0.8856%,7.6265931794695145,"Mucus + Pen Crb Cip,Starting sample 1 normalized"
+217,Otu163,3,0.11612%,0.8084%,6.961763692731657,"Mucus + Pen Crb Cip,Starting sample 2,Starting sample 1 normalized"
+218,Otu110,1,0.26295%,0.73484%,2.7945997337896937,Starting sample 2 normalized
+219,Otu110,2,0.26295%,0.72303%,2.7496862521391896,"Starting sample 1,Starting sample 2 normalized"
+220,Otu110,3,0.26295%,0.58243%,2.214983837231413,"Starting sample 1,Starting sample 2,Mucus + Amp Kan Ery normalized"
+221,Otu161,1,0.10159%,0.78145%,7.692194113593858,Starting sample 1 normalized
+222,Otu161,2,0.10159%,0.72193%,7.106309676149227,"Starting sample 2,Starting sample 1 normalized"
+223,Otu161,3,0.10159%,0.16091%,1.5839157397381631,"Postgate + Van Amp Ery,Starting sample 2,Starting sample 1 normalized"
+224,Otu149,1,0.13254%,0.73743%,5.563829787234043,Starting sample 2 normalized
+225,Otu149,2,0.13254%,0.72276%,5.453146220009054,"Starting sample 1,Starting sample 2 normalized"
+226,Otu149,3,0.13254%,0.43032%,3.2467179719330015,"MT10,Starting sample 2,Starting sample 1 normalized"
+227,Otu22,1,1.26611%,8.44989%,6.673898792364012,BMM - raffinose normalized
+228,Otu22,2,1.26611%,49.49918%,39.095481435262336,"WCA,BMM - raffinose normalized"
+229,Otu22,3,1.26611%,63.97236%,50.52669989179455,"Starting sample 1,BMM - raffinose,WCA normalized"
+230,Otu151,1,0.13032%,0.73155%,5.613489871086557,Starting sample 2 normalized
+231,Otu151,2,0.13032%,0.72336%,5.550644567219154,"Starting sample 1,Starting sample 2 normalized"
+232,Otu151,3,0.13032%,0.2657%,2.038827501534684,"R2A - Mucin,Starting sample 2,Starting sample 1 normalized"
+233,Otu164,1,0.1305%,0.91294%,6.995708812260536,Mucus + Amp Kan Ery normalized
+234,Otu164,2,0.1305%,0.93552%,7.168735632183908,"Mucus + Amp Kan Ery,Starting sample 1 normalized"
+235,Otu164,3,0.1305%,0.92807%,7.111647509578543,"Mucus + Amp Kan Ery,Starting sample 1,Starting sample 2 normalized"
+236,Otu157,1,0.12147%,0.72045%,5.9310940973079775,Starting sample 1 normalized
+237,Otu157,2,0.12147%,0.72458%,5.965094261957685,"Starting sample 1,Starting sample 2 normalized"
+238,Otu157,3,0.12147%,0.65048%,5.355067094755906,"MT10,Starting sample 2,Starting sample 1 normalized"
+239,Otu113,1,0.2536%,0.73053%,2.8806388012618296,Starting sample 2 normalized
+240,Otu113,2,0.2536%,0.72345%,2.852720820189275,"Starting sample 1,Starting sample 2 normalized"
+241,Otu113,3,0.2536%,0.18602%,0.7335173501577287,"Starting sample 1,Starting sample 2,BMM - chondroitin sulfate normalized"
+242,Otu80,1,0.31045%,0.04004%,0.12897406989853438,WHC normalized
+243,Otu80,2,0.31045%,9e-05%,0.0002899017555161862,"Postgate + Kan,WHC normalized"
+244,Otu7,1,5.51233%,0.04071%,0.007385261767709843,Starting sample 1 normalized
+245,Otu7,2,5.51233%,0.00221%,0.0004009193934325412,"Starting sample 1,Starting sample 2 normalized"
+246,Otu7,3,5.51233%,3e-05%,5.4423447072290666e-06,"Starting sample 2,Starting sample 1,MT10 normalized"
+247,Otu34,1,1.74784%,0.72785%,0.41642827718784325,Starting sample 1 normalized
+248,Otu34,2,1.74784%,0.72479%,0.41467754485536434,"Starting sample 1,Starting sample 2 normalized"
+249,Otu34,3,1.74784%,0.22387%,0.12808380629805932,"Starting sample 2,MT10,Starting sample 1 normalized"
+250,Otu129,1,0.18837%,0.73523%,3.9031162074640338,Starting sample 1 normalized
+251,Otu129,2,0.18837%,0.72486%,3.8480649784997607,"Starting sample 1,Starting sample 2 normalized"
+252,Otu129,3,0.18837%,0.27248%,1.4465148378191857,"Starting sample 1,Starting sample 2,YCFA + Pen normalized"
+253,Otu70,1,0.14977%,0.06523%,0.43553448621219204,WHC normalized
+254,Otu70,2,0.14977%,0.00021%,0.0014021499632770249,"Postgate + Kan,WHC normalized"
+255,Otu70,3,0.14977%,0.0%,0.0,"PYG,Postgate + Kan,WHC normalized"
+256,Otu102,1,0.36818%,0.75493%,2.050437286110055,Starting sample 2 normalized
+257,Otu102,2,0.36818%,0.72035%,1.9565158346460971,"Starting sample 1,Starting sample 2 normalized"
+258,Otu102,3,0.36818%,0.20763%,0.5639361182030529,"mGAM + Amp Kan Ery,Starting sample 1,Starting sample 2 normalized"
+259,Otu130,1,0.19972%,0.78217%,3.9163328660124175,Starting sample 2 normalized
+260,Otu130,2,0.19972%,0.7148%,3.5790106148608047,"Starting sample 1,Starting sample 2 normalized"
+261,Otu130,3,0.19972%,0.6736%,3.3727218105347485,"YCFA + Van Amp Ery,Starting sample 1,Starting sample 2 normalized"
+262,Otu120,1,0.2364%,0.75629%,3.19919627749577,Starting sample 2 normalized
+263,Otu120,2,0.2364%,0.72013%,3.0462351945854484,"Starting sample 1,Starting sample 2 normalized"
+264,Otu120,3,0.2364%,0.60144%,2.5441624365482234,"Starting sample 1,Starting sample 2,mGAM + Amp Kan Ery normalized"
+265,Otu159,1,0.12217%,0.85609%,7.007366783989523,5% Sheep Blood + Amp Kan Ery normalized
+266,Otu159,2,0.12217%,0.97923%,8.01530654006712,"5% Sheep Blood + Amp Kan Ery,Starting sample 1 normalized"
+267,Otu159,3,0.12217%,0.89465%,7.322992551362854,"5% Sheep Blood + Amp Kan Ery,Starting sample 1,Starting sample 2 normalized"
+268,Otu104,1,0.27977%,0.74608%,2.666761983057511,Starting sample 1 normalized
+269,Otu104,2,0.27977%,0.72468%,2.5902705794045104,"Starting sample 1,Starting sample 2 normalized"
+270,Otu104,3,0.27977%,0.2728%,0.9750866783429244,"Starting sample 2,Starting sample 1,MT10 normalized"
+271,Otu119,1,0.2391%,0.73862%,3.089167712254287,Starting sample 1 normalized
+272,Otu119,2,0.2391%,0.72484%,3.0315349226265162,"Starting sample 1,Starting sample 2 normalized"
+273,Otu119,3,0.2391%,0.35482%,1.4839815976578838,"MT10,Starting sample 2,Starting sample 1 normalized"
+274,Otu141,1,0.16065%,0.72362%,4.504326174914411,Starting sample 1 normalized
+275,Otu141,2,0.16065%,0.72469%,4.51098661686897,"Starting sample 1,Starting sample 2 normalized"
+276,Otu141,3,0.16065%,0.48854%,3.0410208527855587,"Starting sample 1,Starting sample 2,BHI + FBS (5%) + Neo normalized"
+277,Otu143,1,0.13242%,0.77099%,5.8223078084881426,Starting sample 1 normalized
+278,Otu143,2,0.13242%,0.72309%,5.460579972813774,"Starting sample 1,Starting sample 2 normalized"
+279,Otu143,3,0.13242%,0.27765%,2.0967376529225192,"MT10,Starting sample 2,Starting sample 1 normalized"
+280,Otu153,1,0.12278%,0.72658%,5.917739045447141,Starting sample 1 normalized
+281,Otu153,2,0.12278%,0.72477%,5.902997230819352,"Starting sample 1,Starting sample 2 normalized"
+282,Otu153,3,0.12278%,0.60192%,4.902427105391758,"Mucus + Amp Kan Ery,Starting sample 2,Starting sample 1 normalized"
+283,Otu136,1,0.12919%,1.33604%,10.341667311711433,5% Sheep Blood + Kan normalized
+284,Otu136,2,0.12919%,1.9573%,15.15055344840932,"5% Sheep Blood + Kan,Starting sample 1 normalized"
+285,Otu136,3,0.12919%,1.54411%,11.952240885517456,"5% Sheep Blood + Kan,Starting sample 1,Starting sample 2 normalized"
+286,Otu156,1,0.12232%,0.72595%,5.934843034663179,Starting sample 2 normalized
+287,Otu156,2,0.12232%,0.72384%,5.917593198168738,"Starting sample 1,Starting sample 2 normalized"
+288,Otu156,3,0.12232%,0.44808%,3.6631785480706345,"BHI + Pen Crb Cip,Starting sample 1,Starting sample 2 normalized"
+289,Otu88,1,0.12989%,0.01174%,0.09038417122180306,R2A - Azo-Galactomannon normalized
+290,Otu88,2,0.12989%,2e-05%,0.00015397644160443453,"BHI + FBS (5%) + Neo,R2A - Azo-Galactomannon normalized"
+291,Otu88,3,0.12989%,0.0%,0.0,"BHI (strict anaerobes),BHI + FBS (5%) + Neo,R2A - Azo-Galactomannon normalized"
+292,Otu165,1,0.10514%,0.75205%,7.152843827277915,Starting sample 1 normalized
+293,Otu165,2,0.10514%,0.72445%,6.890336693931901,"Starting sample 1,Starting sample 2 normalized"
+294,Otu165,3,0.10514%,0.27484%,2.6140384249571995,"NCMM - Mucin,Starting sample 1,Starting sample 2 normalized"
+295,Otu172,1,0.10599%,0.73177%,6.904141900179263,Starting sample 2 normalized
+296,Otu172,2,0.10599%,0.72334%,6.824606094914614,"Starting sample 1,Starting sample 2 normalized"
+297,Otu172,3,0.10599%,0.49116%,4.634022077554486,"Starting sample 1,BMM - Mucin,Starting sample 2 normalized"
+298,Otu126,1,0.20752%,0.73304%,3.5323824209714725,Starting sample 2 normalized
+299,Otu126,2,0.20752%,0.72322%,3.48506168080185,"Starting sample 1,Starting sample 2 normalized"
+300,Otu126,3,0.20752%,0.21615%,1.0415863531225906,"mGAM + Pen Crb Cip,Starting sample 1,Starting sample 2 normalized"
+301,Otu134,1,0.15737%,0.73623%,4.678337675541717,Starting sample 1 normalized
+302,Otu134,2,0.15737%,0.72485%,4.606024019825887,"Starting sample 1,Starting sample 2 normalized"
+303,Otu134,3,0.15737%,0.29503%,1.874753765012391,"Starting sample 2,Starting sample 1,MT10 normalized"
+304,Otu167,1,0.10773%,0.74272%,6.894272718834122,Starting sample 1 normalized
+305,Otu167,2,0.10773%,0.72477%,6.72765246449457,"Starting sample 1,Starting sample 2 normalized"
+306,Otu167,3,0.10773%,0.40826%,3.7896593335189825,"Starting sample 1,Starting sample 2,YCFA + Amp normalized"
+307,Otu162,1,0.11032%,0.73964%,6.70449601160261,Starting sample 1 normalized
+308,Otu162,2,0.11032%,0.72482%,6.570159535895576,"Starting sample 1,Starting sample 2 normalized"
+309,Otu162,3,0.11032%,0.28358%,2.570522117476432,"YCFA + Van Amp Ery,Starting sample 2,Starting sample 1 normalized"
+310,Otu108,1,0.27421%,0.73391%,2.676452354035228,Starting sample 1 normalized
+311,Otu108,2,0.27421%,0.72485%,2.643411983516283,"Starting sample 1,Starting sample 2 normalized"
+312,Otu108,3,0.27421%,0.2204%,0.8037635388935488,"Starting sample 1,Starting sample 2,BMM - chondroitin sulfate normalized"
+313,Otu148,1,0.1273%,0.73676%,5.787588373919874,Starting sample 1 normalized
+314,Otu148,2,0.1273%,0.72485%,5.6940298507462686,"Starting sample 1,Starting sample 2 normalized"
+315,Otu148,3,0.1273%,0.12149%,0.9543597800471328,"MT10,Starting sample 1,Starting sample 2 normalized"

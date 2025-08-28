@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
 
 # === INPUTS ===
+MASTER_DATA = 'allChanges.csv'
 TAX_CSV = "Datasets/tax.csv"  # must contain columns: OTU, order (case-insensitive ok)
 CSV_FILES = [
     'testing_outputs/01_Otu52_5_Sheep_Blood_Ery.csv',
