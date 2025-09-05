@@ -105,9 +105,9 @@ def build_outputs(microbiome_csv: Path, cultures_csv: Path, testing_csv: Path, o
 def main():
     p = argparse.ArgumentParser(description="Build per-scenario OTU distributions from testing set.")
     p.add_argument("--microbiome", type=Path, default=Path("Datasets/microbiomeProportions_Human.csv"))
-    p.add_argument("--cultures", type=Path, default=Path("Datasets/cultureProportions_Human.csv"))
-    p.add_argument("--testing", type=Path, default=Path("testingset.csv"))
-    p.add_argument("--outdir", type=Path, default=Path("testing_outputs"))
+    p.add_argument("--cultures", type=Path, default=Path("Datasets/cultureProportions_Human (1).csv"))
+    p.add_argument("--testing", type=Path, default=Path("testingset2.csv"))
+    p.add_argument("--outdir", type=Path, default=Path("testing_outputs2"))
     args = p.parse_args()
 
     manifests = build_outputs(args.microbiome, args.cultures, args.testing, args.outdir)

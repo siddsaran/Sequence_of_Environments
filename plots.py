@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
 
 # === INPUTS ===
-MASTER_DATA = 'allChanges.csv'
+MASTER_DATA = 'allChanges_inputscaled.csv'
 TAX_CSV = "Datasets/tax.csv"  # must contain columns: OTU, order (case-insensitive ok)
 CSV_FILES = [
     'testing_outputs/01_Otu52_5_Sheep_Blood_Ery.csv',
@@ -19,6 +19,17 @@ CSV_FILES = [
     'testing_outputs/06_Otu67_Yeast_Casitone_NA_Postgate_Cip.csv',
     'testing_outputs/07_Otu23_mGAM_Cip_mGAM_Kan_MiPro_NA.csv',
     'testing_outputs/08_Otu39_BMM_Inulin_NA_5_Sheep_Blood_Kan_mGAM_NA.csv',
+]
+
+CSV_FILES_NEW = [
+    'testing_outputs2/01_Otu24_Mucus_Amp.csv',
+    'testing_outputs2/02_Otu11_BHI_Cip.csv',
+    'testing_outputs2/03_Otu59_TGB.csv',
+    'testing_outputs2/04_Otu39_Postgate_Kan_BMM_Inulin.csv',
+    'testing_outputs2/05_Otu67_Postgate_Cip_Yeast_Casitone.csv',
+    'testing_outputs2/06_Otu52_5_Sheep_Blood_Ery_BMM_raffinose.csv',
+    'testing_outputs2/07_Otu33_BHI_FBS_5_Crb_BHI_FBS_5_Amp_YCFA_Pen_Crb_Cip.csv',
+    'testing_outputs2/08_Otu5_BHI_FBS_5_Amp_BHI_FBS_5_Crb_BHI_FBS_5_Amp_Kan_Ery.csv',
 ]
 
 # === HELPERS ===
@@ -76,10 +87,9 @@ def plot_one(csv_path: str, ax_top, ax_bottom, tax: pd.DataFrame, order_colors: 
     conditions = [c for c in df.columns if c != 'OTU']
     df[conditions] = df[conditions].apply(pd.to_numeric, errors='coerce').fillna(0.0)
 
-    # Focal OTU
+    # Focal OTU (from filename; fallback to most-abundant)
     main_otu = parse_main_otu(csv_path)
     if main_otu not in set(df['OTU'].astype(str)):
-        # fallback to most abundant by total across conditions
         row_idx = df[conditions].sum(axis=1).idxmax()
         main_otu = str(df.loc[row_idx, 'OTU'])
 
@@ -89,41 +99,51 @@ def plot_one(csv_path: str, ax_top, ax_bottom, tax: pd.DataFrame, order_colors: 
     ax_top.plot(x, y, marker='o', linewidth=1.6)
     ax_top.set_title(main_otu, fontsize=10, pad=1)
     ax_top.set_ylabel('Rel.\nabd', rotation=0, labelpad=18, va='center')
-    ax_top.set_ylim(0, 1)           # y range from 0 to 1
-    ax_top.set_yticks([0, 0.5, 1])  # ticks at 0, 0.5, and 1
     ax_top.set_xticks([])
 
-    # ----- BOTTOM STACK: aggregated by ORDER -----
-    # Merge order onto per-OTU rows
+    # ----- BOTTOM STACK: orders, with focal ORDER split into its OTUs -----
     merged = df.merge(tax, on='OTU', how='left')
     merged['order'] = merged['order'].fillna('Unknown').replace('', 'Unknown')
 
-    # Sum by order for each condition
-    by_order = (
-        merged.groupby('order', as_index=True)[conditions]
-        .sum()
-        .reindex(order_colors.keys(), fill_value=0.0)  # ensure consistent order/color presence
-    )
+    # (Optional) normalize each stage so every column sums to 1.0
+    # comment out if your inputs are already normalized
+    colsum = merged[conditions].sum(axis=0)
+    merged[conditions] = merged[conditions].div(colsum, axis=1).fillna(0.0)
 
-    # Determine focal order
-    focal_order = merged.loc[merged['OTU'].astype(str) == main_otu, 'order']
-    focal_order = focal_order.iloc[0] if len(focal_order) else 'Unknown'
+    # Totals by order (used for non-focal orders and for focal-order cap)
+    by_order = (merged.groupby('order', as_index=True)[conditions]
+                .sum()
+                .reindex(order_colors.keys(), fill_value=0.0))
 
-    # Optional: order stacking by total at final stage with focal order last to get border fully visible
+    # Focal order
+    focal_order_series = merged.loc[merged['OTU'].astype(str) == main_otu, 'order']
+    focal_order = focal_order_series.iloc[0] if len(focal_order_series) else 'Unknown'
+
+    # Draw non-focal orders as single blocks first
     final_col = conditions[-1]
     order_sequence = list(by_order.sort_values(final_col).index)
     if focal_order in order_sequence:
         order_sequence.remove(focal_order)
-        order_sequence.append(focal_order)
-
     bottoms = np.zeros(len(conditions), dtype=float)
     for ord_name in order_sequence:
         vals = by_order.loc[ord_name, conditions].values.astype(float)
-        if ord_name == focal_order:
-            ax_bottom.bar(x, vals, bottom=bottoms, color=order_colors[ord_name],
-                          edgecolor='black', linewidth=1.8)
-        else:
-            ax_bottom.bar(x, vals, bottom=bottoms, color=order_colors[ord_name])
+        ax_bottom.bar(x, vals, bottom=bottoms, color=order_colors[ord_name])
+        bottoms += vals
+
+    # Now split the focal ORDER into its OTUs; outline ONLY the focal OTU
+    focal_rows = merged[merged['order'] == focal_order].copy()
+    # Sort focal OTUs by their final-stage contribution for nicer stacking
+    focal_rows['__sort__'] = focal_rows[final_col]
+    focal_rows = focal_rows.sort_values('__sort__')
+    for _, row in focal_rows.iterrows():
+        vals = row[conditions].values.astype(float)
+        is_target = (str(row['OTU']) == str(main_otu))
+        ax_bottom.bar(
+            x, vals, bottom=bottoms,
+            color=order_colors[focal_order],
+            edgecolor='black' if is_target else 'white',
+            linewidth=1.8 if is_target else 0.2
+        )
         bottoms += vals
 
     ax_bottom.set_ylabel('Rel.\nabd', rotation=0, labelpad=18, va='center')
@@ -135,7 +155,7 @@ def make_grid(csv_paths, tax_csv=TAX_CSV, out_path='compositional_by_order.pdf')
     all_orders = collect_all_orders(tax, csv_paths)
     order_colors = build_order_palette(all_orders)
 
-    fig = plt.figure(figsize=(16, 12))
+    fig = plt.figure(figsize=(12, 9))
     outer = fig.add_gridspec(3, 3, wspace=0.35, hspace=0.5)
 
     # Positions for 8 plots (skip bottom-right for legend)
@@ -173,10 +193,11 @@ def make_grid(csv_paths, tax_csv=TAX_CSV, out_path='compositional_by_order.pdf')
     plt.close(fig)
     return out_path
 
-def plot_log10_histograms_subplots(save_prefix="fold_enrichment_log10"):
+def plot_log10_histograms_subplots(save_prefix="fold_enrichment_log10_filteredscaled"):
     # Filter only 1, 2, 3 culture enrichments & remove zeros
-    filtered_data = MASTER_DATA[MASTER_DATA['num_growth_conditions'].isin([1, 2, 3])]
-    filtered_data = filtered_data[filtered_data['fold_change'] > 0]
+    df = pd.read_csv(MASTER_DATA)
+    filtered_data = df[df['num_growth_conditions'].isin([1, 2, 3])]
+    filtered_data = filtered_data[filtered_data['fold_change'] > 0].dropna(subset=['fold_change'])
 
     colors = {1: "red", 2: "red", 3: "red"}
 
@@ -225,7 +246,6 @@ def plot_log10_histograms_subplots(save_prefix="fold_enrichment_log10"):
 
     # Save in both PDF (vector) and PNG (raster)
     plt.savefig(f"{save_prefix}_subplots.pdf", bbox_inches="tight")
-    plt.savefig(f"{save_prefix}_subplots.png", dpi=300, bbox_inches="tight")
     plt.show()
 
 

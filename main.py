@@ -2,7 +2,7 @@ import pandas as pd
 from itertools import permutations
 
 TAX = pd.read_csv("Datasets/tax.csv")
-CULTURE = pd.read_csv("Datasets/cultureProportions_Human_avg.csv")
+CULTURE = pd.read_csv("Datasets/cultureProportions_Human (1).csv")
 MICROBIOME = pd.read_csv("Datasets/microbiomeProportions_Human.csv")
 LIMIT = .01
 

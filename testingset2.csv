@@ -1,0 +1,9 @@
+OTU,# conditions,original abd,final abd,FC,conditions,order,family,genus,Recovery plate
+Otu24,1,0.11%,95.74%,876.815185,Mucus + Amp ,Burkholderiales,Sutterellaceae,Parasutterella,BHI + FBS
+Otu11,1,0.14%,98.99%,699.724465,BHI + Cip ,Lactobacillales,Streptococcaceae,Streptococcus,BHI (FBS probably okay)
+Otu59,1,0.23%,7.98%,34.7598414910294,TGB ,Lactobacillales,Lactobacillaceae,Ligilactobacillus,5% Sheep blood
+Otu39,2,0.22%,91.63%,414.988767607228,"Postgate + Kan,BMM - Inulin ",Bacteroidales,Bacteroidaceae,Bacteroides,5% Sheep blood
+Otu67,2,0.33%,68.15%,208.485697677976,"Postgate + Cip,Yeast Casitone ",Pasteurellales,Pasteurellaceae,Haemophilus,BHI + FBS
+Otu52,2,0.45%,39.35%,87.2313404712819,"5% Sheep Blood + Ery,BMM - raffinose ",Bacteroidales,Bacteroidaceae,Phocaeicola,5% Sheep blood
+Otu33,3,0.14%,48.58%,347.49781846792,"BHI + FBS (5%) + Crb,BHI + FBS (5%) + Amp,YCFA + Pen Crb Cip ",Bacteroidales,Porphyromonadaceae,Parabacteroides,BHI + FBS
+Otu5,3,0.53%,67.71%,128.004707172293,"BHI + FBS (5%) + Amp,BHI + FBS (5%) + Crb,BHI + FBS (5%) + Amp Kan Ery ",Bacteroidales,Porphyromonadaceae,Parabacteroides,BHI + FBS
