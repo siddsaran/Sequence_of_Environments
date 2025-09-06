@@ -1,0 +1,4 @@
+,OTU,num_growth_conditions,original_abundance,final_abundance,fold_change,conditions
+-2,Otu3,1,0.73368%,95.83311%,130.61976611056593,BHI + FBS (5%) + Van Amp Ery normalized
+-1,Otu3,2,0.73368%,99.98285%,136.2758286991604,"mGAM + Amp,Postgate + Van Amp Ery normalized"
+0,Otu3,3,0.73368%,99.99979%,136.29891778432014,"mGAM + Amp,mGAM + Van Amp Ery,YCFA + Pen Crb Cip normalized"

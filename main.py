@@ -3,7 +3,7 @@ from itertools import permutations
 
 TAX = pd.read_csv("Datasets/tax.csv")
 CULTURE = pd.read_csv("Datasets/cultureProportions_Human (1).csv")
-MICROBIOME = pd.read_csv("Datasets/microbiomeProportions_Human.csv")
+MICROBIOME = pd.read_csv("Datasets/microbiomeProportions_Human_scaled.csv")
 LIMIT = .01
 
 def find_cols_to_keep(culture, bacteria):
@@ -32,8 +32,10 @@ def find_best_sequence(culture, bacteria, combos):
     for combo in combos:
         combo = list(combo)
         filtered = culture[combo].copy()
+        filtered['input'] = MICROBIOME.set_index('OTU')['ave_rel_abd']
         env_looked = []
-        prev_label = None
+        prev_label = 'input'
+
         for env in combo:
             env_looked.append(env)
             label = ",".join(env_looked) + " normalized"
@@ -72,7 +74,7 @@ def main():
     for otu in MICROBIOME["OTU"]:
         bacteria = otu
         cols = find_cols_to_keep(culture, bacteria)
-        if otu in otus_to_skip:
+        if otu not in otus_to_skip:
             continue
         if otu in otus_done:
             continue
@@ -86,7 +88,7 @@ def main():
             merged = MICROBIOME.merge(df, on='OTU', how='left')
             merged = merged.fillna(0)
             normalized_cols = list(df.columns[num_sequences:])
-            original = round(MICROBIOME.loc[MICROBIOME['OTU'] == bacteria, 'relabd'].values[0] * 100, 5)
+            original = round(MICROBIOME.loc[MICROBIOME['OTU'] == bacteria, 'ave_rel_abd'].iloc[0] * 100, 5)
             abd = round(merged.loc[merged['OTU'] == bacteria, normalized_cols[-1]].values[0] * 100,5)
             factor = abd / original
             new_row = {
@@ -101,7 +103,7 @@ def main():
             main_data.loc[len(main_data) - 2] = new_row
         num_done += 1
 
-    main_data.to_csv('allChanges_inputscaled.csv')
+    main_data.to_csv('allChanges_inputscaled_otu3.csv')
     # bacteria = input("Type a bacteria: ")
     # num_sequences = int(input("Type the number of environments you want to grow: "))
     # df = find_n_sequences(bacteria, num_sequences)

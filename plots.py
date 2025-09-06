@@ -251,7 +251,7 @@ def plot_log10_histograms_subplots(save_prefix="fold_enrichment_log10_filteredsc
 
 def main():
     # plot_log10_histograms_subplots()
-    make_grid(CSV_FILES, tax_csv=TAX_CSV, out_path='compositional_by_order.pdf')
+    make_grid(CSV_FILES_NEW, tax_csv=TAX_CSV, out_path='compositional_by_order_new.pdf')
 
 
 
